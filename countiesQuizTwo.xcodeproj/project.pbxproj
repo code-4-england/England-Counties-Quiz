@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22B6A0D7150681BE0021C68B /* countyA.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B6A0D2150681BE0021C68B /* countyA.png */; };
+		22B6A0D8150681BE0021C68B /* countyB.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B6A0D3150681BE0021C68B /* countyB.png */; };
+		22B6A0D9150681BE0021C68B /* countyC.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B6A0D4150681BE0021C68B /* countyC.png */; };
+		22B6A0DA150681BE0021C68B /* countyD.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B6A0D5150681BE0021C68B /* countyD.png */; };
+		22B6A0DB150681BE0021C68B /* countyE.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B6A0D6150681BE0021C68B /* countyE.png */; };
+		22B94B261502E2F900CDA704 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B94B251502E2F900CDA704 /* UIKit.framework */; };
+		22B94B281502E2F900CDA704 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B94B271502E2F900CDA704 /* Foundation.framework */; };
+		22B94B2A1502E2F900CDA704 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B94B291502E2F900CDA704 /* CoreGraphics.framework */; };
+		22B94B301502E2F900CDA704 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22B94B2E1502E2F900CDA704 /* InfoPlist.strings */; };
+		22B94B321502E2F900CDA704 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B94B311502E2F900CDA704 /* main.m */; };
+		22B94B361502E2F900CDA704 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B94B351502E2F900CDA704 /* AppDelegate.m */; };
+		22B94B391502E2F900CDA704 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B94B371502E2F900CDA704 /* MainStoryboard.storyboard */; };
+		22B94B3C1502E2F900CDA704 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B94B3B1502E2F900CDA704 /* ViewController.m */; };
+		22C48F701506700D00CC00F0 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C48F6F1506700D00CC00F0 /* GameViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22B6A0D2150681BE0021C68B /* countyA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyA.png; sourceTree = "<group>"; };
+		22B6A0D3150681BE0021C68B /* countyB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyB.png; sourceTree = "<group>"; };
+		22B6A0D4150681BE0021C68B /* countyC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyC.png; sourceTree = "<group>"; };
+		22B6A0D5150681BE0021C68B /* countyD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyD.png; sourceTree = "<group>"; };
+		22B6A0D6150681BE0021C68B /* countyE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyE.png; sourceTree = "<group>"; };
+		22B94B211502E2F900CDA704 /* countiesQuizTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = countiesQuizTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B94B251502E2F900CDA704 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		22B94B271502E2F900CDA704 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22B94B291502E2F900CDA704 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		22B94B2D1502E2F900CDA704 /* countiesQuizTwo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "countiesQuizTwo-Info.plist"; sourceTree = "<group>"; };
+		22B94B2F1502E2F900CDA704 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22B94B311502E2F900CDA704 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22B94B331502E2F900CDA704 /* countiesQuizTwo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "countiesQuizTwo-Prefix.pch"; sourceTree = "<group>"; };
+		22B94B341502E2F900CDA704 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22B94B351502E2F900CDA704 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22B94B381502E2F900CDA704 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		22B94B3A1502E2F900CDA704 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		22B94B3B1502E2F900CDA704 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		22C48F6E1506700D00CC00F0 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		22C48F6F1506700D00CC00F0 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22B94B1E1502E2F900CDA704 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B94B261502E2F900CDA704 /* UIKit.framework in Frameworks */,
+				22B94B281502E2F900CDA704 /* Foundation.framework in Frameworks */,
+				22B94B2A1502E2F900CDA704 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22B94B161502E2F800CDA704 = {
+			isa = PBXGroup;
+			children = (
+				22B94B2B1502E2F900CDA704 /* countiesQuizTwo */,
+				22B94B241502E2F900CDA704 /* Frameworks */,
+				22B94B221502E2F900CDA704 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22B94B221502E2F900CDA704 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22B94B211502E2F900CDA704 /* countiesQuizTwo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22B94B241502E2F900CDA704 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22B94B251502E2F900CDA704 /* UIKit.framework */,
+				22B94B271502E2F900CDA704 /* Foundation.framework */,
+				22B94B291502E2F900CDA704 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22B94B2B1502E2F900CDA704 /* countiesQuizTwo */ = {
+			isa = PBXGroup;
+			children = (
+				22B6A0D2150681BE0021C68B /* countyA.png */,
+				22B6A0D3150681BE0021C68B /* countyB.png */,
+				22B6A0D4150681BE0021C68B /* countyC.png */,
+				22B6A0D5150681BE0021C68B /* countyD.png */,
+				22B6A0D6150681BE0021C68B /* countyE.png */,
+				22B94B341502E2F900CDA704 /* AppDelegate.h */,
+				22B94B351502E2F900CDA704 /* AppDelegate.m */,
+				22C48F6E1506700D00CC00F0 /* GameViewController.h */,
+				22C48F6F1506700D00CC00F0 /* GameViewController.m */,
+				22B94B371502E2F900CDA704 /* MainStoryboard.storyboard */,
+				22B94B3A1502E2F900CDA704 /* ViewController.h */,
+				22B94B3B1502E2F900CDA704 /* ViewController.m */,
+				22B94B2C1502E2F900CDA704 /* Supporting Files */,
+			);
+			path = countiesQuizTwo;
+			sourceTree = "<group>";
+		};
+		22B94B2C1502E2F900CDA704 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22B94B2D1502E2F900CDA704 /* countiesQuizTwo-Info.plist */,
+				22B94B2E1502E2F900CDA704 /* InfoPlist.strings */,
+				22B94B311502E2F900CDA704 /* main.m */,
+				22B94B331502E2F900CDA704 /* countiesQuizTwo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22B94B201502E2F900CDA704 /* countiesQuizTwo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22B94B3F1502E2F900CDA704 /* Build configuration list for PBXNativeTarget "countiesQuizTwo" */;
+			buildPhases = (
+				22B94B1D1502E2F900CDA704 /* Sources */,
+				22B94B1E1502E2F900CDA704 /* Frameworks */,
+				22B94B1F1502E2F900CDA704 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = countiesQuizTwo;
+			productName = countiesQuizTwo;
+			productReference = 22B94B211502E2F900CDA704 /* countiesQuizTwo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22B94B181502E2F800CDA704 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 22B94B1B1502E2F800CDA704 /* Build configuration list for PBXProject "countiesQuizTwo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22B94B161502E2F800CDA704;
+			productRefGroup = 22B94B221502E2F900CDA704 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22B94B201502E2F900CDA704 /* countiesQuizTwo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22B94B1F1502E2F900CDA704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B94B301502E2F900CDA704 /* InfoPlist.strings in Resources */,
+				22B94B391502E2F900CDA704 /* MainStoryboard.storyboard in Resources */,
+				22B6A0D7150681BE0021C68B /* countyA.png in Resources */,
+				22B6A0D8150681BE0021C68B /* countyB.png in Resources */,
+				22B6A0D9150681BE0021C68B /* countyC.png in Resources */,
+				22B6A0DA150681BE0021C68B /* countyD.png in Resources */,
+				22B6A0DB150681BE0021C68B /* countyE.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22B94B1D1502E2F900CDA704 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B94B321502E2F900CDA704 /* main.m in Sources */,
+				22B94B361502E2F900CDA704 /* AppDelegate.m in Sources */,
+				22B94B3C1502E2F900CDA704 /* ViewController.m in Sources */,
+				22C48F701506700D00CC00F0 /* GameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22B94B2E1502E2F900CDA704 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22B94B2F1502E2F900CDA704 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22B94B371502E2F900CDA704 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22B94B381502E2F900CDA704 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22B94B3D1502E2F900CDA704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22B94B3E1502E2F900CDA704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22B94B401502E2F900CDA704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "countiesQuizTwo/countiesQuizTwo-Prefix.pch";
+				INFOPLIST_FILE = "countiesQuizTwo/countiesQuizTwo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		22B94B411502E2F900CDA704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "countiesQuizTwo/countiesQuizTwo-Prefix.pch";
+				INFOPLIST_FILE = "countiesQuizTwo/countiesQuizTwo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22B94B1B1502E2F800CDA704 /* Build configuration list for PBXProject "countiesQuizTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B94B3D1502E2F900CDA704 /* Debug */,
+				22B94B3E1502E2F900CDA704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22B94B3F1502E2F900CDA704 /* Build configuration list for PBXNativeTarget "countiesQuizTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22B94B401502E2F900CDA704 /* Debug */,
+				22B94B411502E2F900CDA704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22B94B181502E2F800CDA704 /* Project object */;
+}
