@@ -10,9 +10,16 @@
 
 @interface CountyNavController ()
 
+
 @end
 
 @implementation CountyNavController
+
+@synthesize testProp;
+@synthesize currentCountyToGuess;
+@synthesize score;
+@synthesize currentCountyAnswer;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,16 +30,19 @@
     return self;
 }
 
-- (void)loadView
-{
-    // If you create your views manually, you MUST override this method and use it to create your views.
-    // If you use Interface Builder to create your views, then you must NOT override this method.
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.testProp = 888;
+    
+    self.currentCountyToGuess = 10000;
+    
+    NSLog(@"testProp1 %i", self.testProp);
+    
+    NSLog(@"currentCountyToGuess initial %i", self.currentCountyToGuess);
 }
 
 - (void)viewDidUnload

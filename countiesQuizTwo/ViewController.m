@@ -20,7 +20,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.navigationController.navigationBar.hidden = YES;
+    ((CountyNavController *)self.parentViewController).testProp = 999;
     
+    NSLog(@"*** testprop %i", ((CountyNavController *)self.parentViewController).testProp);
     
 }
 

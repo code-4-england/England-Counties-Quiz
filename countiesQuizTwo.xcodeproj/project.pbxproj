@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2285E4671508CD5600FD76C1 /* CountyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2285E4661508CD5600FD76C1 /* CountyNavController.m */; };
+		228BC828150780FA00BF8705 /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228BC827150780FA00BF8705 /* AnswerViewController.m */; };
+		228BC82F1507B41600BF8705 /* countyA_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 228BC82A1507B41600BF8705 /* countyA_red.png */; };
+		228BC8301507B41600BF8705 /* countyB_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 228BC82B1507B41600BF8705 /* countyB_red.png */; };
+		228BC8311507B41600BF8705 /* countyC_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 228BC82C1507B41600BF8705 /* countyC_red.png */; };
+		228BC8321507B41600BF8705 /* countyD_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 228BC82D1507B41600BF8705 /* countyD_red.png */; };
+		228BC8331507B41600BF8705 /* countyE_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 228BC82E1507B41600BF8705 /* countyE_red.png */; };
 		22B6A0D7150681BE0021C68B /* countyA.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B6A0D2150681BE0021C68B /* countyA.png */; };
 		22B6A0D8150681BE0021C68B /* countyB.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B6A0D3150681BE0021C68B /* countyB.png */; };
 		22B6A0D9150681BE0021C68B /* countyC.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B6A0D4150681BE0021C68B /* countyC.png */; };
@@ -24,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2285E4651508CD5600FD76C1 /* CountyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountyNavController.h; sourceTree = "<group>"; };
+		2285E4661508CD5600FD76C1 /* CountyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountyNavController.m; sourceTree = "<group>"; };
+		228BC826150780FA00BF8705 /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
+		228BC827150780FA00BF8705 /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
+		228BC82A1507B41600BF8705 /* countyA_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyA_red.png; sourceTree = "<group>"; };
+		228BC82B1507B41600BF8705 /* countyB_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyB_red.png; sourceTree = "<group>"; };
+		228BC82C1507B41600BF8705 /* countyC_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyC_red.png; sourceTree = "<group>"; };
+		228BC82D1507B41600BF8705 /* countyD_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyD_red.png; sourceTree = "<group>"; };
+		228BC82E1507B41600BF8705 /* countyE_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyE_red.png; sourceTree = "<group>"; };
 		22B6A0D2150681BE0021C68B /* countyA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyA.png; sourceTree = "<group>"; };
 		22B6A0D3150681BE0021C68B /* countyB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyB.png; sourceTree = "<group>"; };
 		22B6A0D4150681BE0021C68B /* countyC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyC.png; sourceTree = "<group>"; };
@@ -90,6 +106,11 @@
 		22B94B2B1502E2F900CDA704 /* countiesQuizTwo */ = {
 			isa = PBXGroup;
 			children = (
+				228BC82A1507B41600BF8705 /* countyA_red.png */,
+				228BC82B1507B41600BF8705 /* countyB_red.png */,
+				228BC82C1507B41600BF8705 /* countyC_red.png */,
+				228BC82D1507B41600BF8705 /* countyD_red.png */,
+				228BC82E1507B41600BF8705 /* countyE_red.png */,
 				22B6A0D2150681BE0021C68B /* countyA.png */,
 				22B6A0D3150681BE0021C68B /* countyB.png */,
 				22B6A0D4150681BE0021C68B /* countyC.png */,
@@ -100,9 +121,13 @@
 				22C48F6E1506700D00CC00F0 /* GameViewController.h */,
 				22C48F6F1506700D00CC00F0 /* GameViewController.m */,
 				22B94B371502E2F900CDA704 /* MainStoryboard.storyboard */,
+				2285E4651508CD5600FD76C1 /* CountyNavController.h */,
+				2285E4661508CD5600FD76C1 /* CountyNavController.m */,
 				22B94B3A1502E2F900CDA704 /* ViewController.h */,
 				22B94B3B1502E2F900CDA704 /* ViewController.m */,
 				22B94B2C1502E2F900CDA704 /* Supporting Files */,
+				228BC826150780FA00BF8705 /* AnswerViewController.h */,
+				228BC827150780FA00BF8705 /* AnswerViewController.m */,
 			);
 			path = countiesQuizTwo;
 			sourceTree = "<group>";
@@ -175,6 +200,11 @@
 				22B6A0D9150681BE0021C68B /* countyC.png in Resources */,
 				22B6A0DA150681BE0021C68B /* countyD.png in Resources */,
 				22B6A0DB150681BE0021C68B /* countyE.png in Resources */,
+				228BC82F1507B41600BF8705 /* countyA_red.png in Resources */,
+				228BC8301507B41600BF8705 /* countyB_red.png in Resources */,
+				228BC8311507B41600BF8705 /* countyC_red.png in Resources */,
+				228BC8321507B41600BF8705 /* countyD_red.png in Resources */,
+				228BC8331507B41600BF8705 /* countyE_red.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +219,8 @@
 				22B94B361502E2F900CDA704 /* AppDelegate.m in Sources */,
 				22B94B3C1502E2F900CDA704 /* ViewController.m in Sources */,
 				22C48F701506700D00CC00F0 /* GameViewController.m in Sources */,
+				228BC828150780FA00BF8705 /* AnswerViewController.m in Sources */,
+				2285E4671508CD5600FD76C1 /* CountyNavController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

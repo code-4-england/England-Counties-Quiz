@@ -8,8 +8,39 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GameViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
+#import "CountyNavController.h"
+
+
+
+@interface GameViewController : UIViewController {
+    NSMutableArray *countyToGuessArray;
+    
+    int countyToGuessNumber;
+    
+    int testVar;
+    
+}
+
+
+- (void)isAnswerCorrect:(int)countyAnswer currentHighlightedCounty:(int)correctAnswer;
 
 @property (strong, nonatomic) IBOutlet UITextField *countiesTextField;
+
+@property (strong, nonatomic) IBOutlet UIImageView *Devon;
+
+@property (strong, nonatomic) IBOutlet UIImageView *Lancashire;
+
+@property (strong, nonatomic) IBOutlet UIImageView *Yorkshire;
+
+@property (strong, nonatomic) IBOutlet UIImageView *London;
+
+@property (strong, nonatomic) IBOutlet UIImageView *Cornwall;
+
+@property NSMutableArray *countyToGuessArray;
+
+@property int countyToGuessNumber;
+
+@property int testVar;
+
 
 @end
