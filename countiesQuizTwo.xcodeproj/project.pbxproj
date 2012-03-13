@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2285E4671508CD5600FD76C1 /* CountyNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2285E4661508CD5600FD76C1 /* CountyNavController.m */; };
+		222E8926150FEAD8009BA167 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222E8925150FEAD8009BA167 /* ResultsViewController.m */; };
 		228BC828150780FA00BF8705 /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 228BC827150780FA00BF8705 /* AnswerViewController.m */; };
 		228BC82F1507B41600BF8705 /* countyA_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 228BC82A1507B41600BF8705 /* countyA_red.png */; };
 		228BC8301507B41600BF8705 /* countyB_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 228BC82B1507B41600BF8705 /* countyB_red.png */; };
@@ -31,8 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2285E4651508CD5600FD76C1 /* CountyNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountyNavController.h; sourceTree = "<group>"; };
-		2285E4661508CD5600FD76C1 /* CountyNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountyNavController.m; sourceTree = "<group>"; };
+		222E8924150FEAD8009BA167 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultsViewController.h; path = ../ResultsViewController.h; sourceTree = "<group>"; };
+		222E8925150FEAD8009BA167 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultsViewController.m; path = ../ResultsViewController.m; sourceTree = "<group>"; };
 		228BC826150780FA00BF8705 /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
 		228BC827150780FA00BF8705 /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
 		228BC82A1507B41600BF8705 /* countyA_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyA_red.png; sourceTree = "<group>"; };
@@ -106,6 +106,8 @@
 		22B94B2B1502E2F900CDA704 /* countiesQuizTwo */ = {
 			isa = PBXGroup;
 			children = (
+				222E8924150FEAD8009BA167 /* ResultsViewController.h */,
+				222E8925150FEAD8009BA167 /* ResultsViewController.m */,
 				228BC82A1507B41600BF8705 /* countyA_red.png */,
 				228BC82B1507B41600BF8705 /* countyB_red.png */,
 				228BC82C1507B41600BF8705 /* countyC_red.png */,
@@ -121,8 +123,6 @@
 				22C48F6E1506700D00CC00F0 /* GameViewController.h */,
 				22C48F6F1506700D00CC00F0 /* GameViewController.m */,
 				22B94B371502E2F900CDA704 /* MainStoryboard.storyboard */,
-				2285E4651508CD5600FD76C1 /* CountyNavController.h */,
-				2285E4661508CD5600FD76C1 /* CountyNavController.m */,
 				22B94B3A1502E2F900CDA704 /* ViewController.h */,
 				22B94B3B1502E2F900CDA704 /* ViewController.m */,
 				22B94B2C1502E2F900CDA704 /* Supporting Files */,
@@ -220,7 +220,7 @@
 				22B94B3C1502E2F900CDA704 /* ViewController.m in Sources */,
 				22C48F701506700D00CC00F0 /* GameViewController.m in Sources */,
 				228BC828150780FA00BF8705 /* AnswerViewController.m in Sources */,
-				2285E4671508CD5600FD76C1 /* CountyNavController.m in Sources */,
+				222E8926150FEAD8009BA167 /* ResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

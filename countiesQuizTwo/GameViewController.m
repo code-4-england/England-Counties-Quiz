@@ -7,7 +7,7 @@
 //
 
 #import "GameViewController.h"
-
+#import "AnswerViewController.h"
 
 @interface GameViewController ()
 
@@ -20,10 +20,15 @@
 @synthesize Yorkshire;
 @synthesize London;
 @synthesize Cornwall;
+@synthesize scoreText;
+@synthesize questionNumberText;
+@synthesize totalQuestionsText;
 @synthesize countyToGuessArray;
 @synthesize countyToGuessNumber;
-
-@synthesize testVar;
+@synthesize score;
+@synthesize currentAnswer;
+@synthesize currentTurn;
+@synthesize totalQuestions;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -33,7 +38,46 @@
         // Custom initialization
     }
     return self;
+    
+    
 }
+
+
+- (void)nextQuestion
+{
+    
+    
+    NSLog(@"NEXT QUESTION");
+    
+    int randomCounty = arc4random() % 4;
+
+    self.currentTurn += 1;
+    
+
+    
+    self.questionNumberText.text = [NSString stringWithFormat:@"%i", self.currentTurn];
+    
+    self.countyToGuessNumber = randomCounty;
+    
+    NSMutableArray *allCounties = [[NSMutableArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
+    
+	NSMutableArray *currentCounty = [[NSMutableArray alloc] init];
+    
+    [currentCounty addObject:[allCounties objectAtIndex:randomCounty]];
+    
+    //NSLog(@"name>>> %@",[currentCounty objectAtIndex:0]);
+    
+    [Devon setHighlighted:NO];
+    [Cornwall setHighlighted:NO];
+    [Yorkshire setHighlighted:NO];
+    [London setHighlighted:NO];
+    [Lancashire setHighlighted:NO];
+    
+    [[currentCounty objectAtIndex:0] setHighlighted:YES];
+    
+}
+
+
 /*
 - (void)loadView
 {
@@ -45,17 +89,29 @@
 {
     [super viewDidLoad];
     
-    //UIApplication *application = [UIApplication sharedApplication];
-    self.testVar = 3333;
-    //NSLog(@"testtest: %@", application.description);
-    NSLog(@">>>>>testvar: %i", self.testVar);
+    [self performSegueWithIdentifier:@"toResult" sender:self];
+    
+    NSLog(@">>>>>>>>>>>>> %@ <<<<<<<<<<<<<<<<", self.description);
+    
+    self.score = 0;
+    
+    self.totalQuestions = 5;
+    
+    self.currentTurn = 1;
+    
+    self.totalQuestionsText.text = [NSString stringWithFormat:@"%i", self.totalQuestions];
+    
+    self.questionNumberText.text = [NSString stringWithFormat:@"%i", self.currentTurn];
+    
     int randomCounty = arc4random() % 4;
     
     self.countyToGuessNumber = randomCounty;
     
-    ((CountyNavController *)self.parentViewController).currentCountyToGuess = self.countyToGuessNumber;
+    NSString * scoreString = [NSString stringWithFormat:@"%i", 0];
     
-    NSLog(@"countyToGuessNumber %i", ((CountyNavController *)self.parentViewController).currentCountyToGuess);
+    [self.scoreText setText:scoreString];
+    
+    //NSLog(@"countyToGuessNumber %i", ((CountyNavController *)self.parentViewController).currentCountyToGuess);
 
     
     NSMutableArray *allCounties = [[NSMutableArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
@@ -64,38 +120,88 @@
      
     [currentCounty addObject:[allCounties objectAtIndex:randomCounty]];
     
-    NSLog(@"name>>> %@",[currentCounty objectAtIndex:0]);
+    //NSLog(@"name>>> %@",[currentCounty objectAtIndex:0]);
     
     [[currentCounty objectAtIndex:0] setHighlighted:YES];
-
-
-    NSLog(@"222 testprop %i", ((CountyNavController *)self.parentViewController).testProp);
-    
-    // Do any additional setup after loading the view, typically from a nib.
     
     
-    //NSLog(@"random county: %i", AppDelegate.randomCounty);
     
-    //[self.countyToGuessArray addObject:London];
-    
-    //self.Cornwall.highlighted = YES;
-      
-    //NSLog(@"county to guess: %@" , [countyToGuessArray objectAtIndex:1]);
-    
-    //NSString *fish = [[countyToGuessArray objectAtIndex:0] description];    
-    
-   //int fish = [self.countyToGuessArray count];   
-   
-    //NSLog(@">>>>array count: %i",fish);
-    
-    // NSLog(@"%@", Devon.name);
-          
-    //[[countyToGuessArray objectAtIndex:1] setHighlighted:YES];
-    
-   // [London setHighlighted:YES];
     
     NSLog(@"Game screen loaded");
 }
+
+
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)isAnswerCorrect{
+    NSLog(@"Is answer correct");
+   
+    if(self.currentAnswer == self.countyToGuessNumber){
+        NSLog(@"CORRECT!!!");
+        
+        self.score += 1;
+         
+        NSString* scoreString = [NSString stringWithFormat:@"%i", self.score];
+        
+        scoreText.text = scoreString;
+        
+        
+        UIAlertView *alertDialog;
+        alertDialog = [[UIAlertView alloc]
+                       initWithTitle:@"Result" message:@"Correct!" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        alertDialog.alertViewStyle=UIAlertViewStyleDefault;
+        [alertDialog show];
+        
+        if(self.currentTurn == self.totalQuestions){
+            
+            NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxGo to result screen");
+            
+            [self performSegueWithIdentifier:@"toResults" sender:self];
+        } else{
+            [self nextQuestion];
+        }
+        
+    } else {
+        NSLog(@"WRONG!!!");
+        
+        UIAlertView *alertDialog;
+        alertDialog = [[UIAlertView alloc]
+                       initWithTitle:@"Result" message:@"Wrong!!!" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
+        alertDialog.alertViewStyle=UIAlertViewStyleDefault;
+        [alertDialog show];
+        
+        if(self.currentTurn == self.totalQuestions){
+            
+            NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxGo to result screen");
+            
+            [self performSegueWithIdentifier:@"toResults" sender:self];
+        } else{
+            [self nextQuestion];
+        }
+        
+    }
+     
+    
+}
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    NSLog(@"********************prepare for segue");
+    /*
+    AnswerViewController *answerViewController = [[[segue destinationViewController] viewControllers] objectAtIndex:0];
+    
+    //answerViewController.delegate = self;
+    */
+}
+
+
 
 - (void)viewDidUnload
 {
@@ -106,45 +212,11 @@
     [self setLondon:nil];
     [self setYorkshire:nil];
     [self setCornwall:nil];
+    [self setScoreText:nil];
+    [self setQuestionNumberText:nil];
+    [self setTotalQuestionsText:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (void)isAnswerCorrect:(int)countyAnswer currentHighlightedCounty:(int)correctAnswer{
-    NSLog(@"Is answer correct");
-   //NSLog(@">>>your answer: %i, %i", countyAnswer , self.testVar);
-    NSLog(@">>>Current county to guess: %@", ((CountyNavController *)self.parentViewController).description);
-    
-    if(countyAnswer == correctAnswer){
-        NSLog(@"CORRECT!!!");
-        
-        
-        UIAlertView *alertDialog;
-        alertDialog = [[UIAlertView alloc]
-                       initWithTitle:@"Result" message:@"Correct!" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
-        alertDialog.alertViewStyle=UIAlertViewStyleDefault;
-        [alertDialog show];
-        
-    } else {
-        NSLog(@"WRONG!!!");
-        
-        UIAlertView *alertDialog;
-        alertDialog = [[UIAlertView alloc]
-                       initWithTitle:@"Result" message:@"Wrong!!!" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
-        alertDialog.alertViewStyle=UIAlertViewStyleDefault;
-        [alertDialog show];
-    }
-     
-    
-}
-
-
-
-
 
 @end

@@ -12,13 +12,9 @@
 
 @synthesize window = _window;
 
-@synthesize testInt;
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    //int randomCounty = 6;
     
     // Override point for customization after application launch.
     return YES;

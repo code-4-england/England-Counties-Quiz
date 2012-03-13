@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CountyNavController.h"
 #import "GameViewController.h"
-
 
 
 @interface AnswerViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 
+
 @property int countySelected;
+
 
 @end

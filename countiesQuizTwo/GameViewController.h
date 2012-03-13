@@ -8,21 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CountyNavController.h"
+@class AnswerViewController;
 
 
+@interface GameViewController : UIViewController
 
-@interface GameViewController : UIViewController {
-    NSMutableArray *countyToGuessArray;
-    
-    int countyToGuessNumber;
-    
-    int testVar;
-    
-}
+- (void)nextQuestion;
 
+- (void)isAnswerCorrect;
 
-- (void)isAnswerCorrect:(int)countyAnswer currentHighlightedCounty:(int)correctAnswer;
 
 @property (strong, nonatomic) IBOutlet UITextField *countiesTextField;
 
@@ -36,11 +30,24 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *Cornwall;
 
+@property (strong, nonatomic) IBOutlet UITextField *scoreText;
+
+@property (strong, nonatomic) IBOutlet UITextField *questionNumberText;
+
+@property (strong, nonatomic) IBOutlet UITextField *totalQuestionsText;
+
+@property int currentAnswer;
+
+@property int score;
+
+@property int currentTurn;
+
+@property int totalQuestions;
+
+
 @property NSMutableArray *countyToGuessArray;
 
 @property int countyToGuessNumber;
-
-@property int testVar;
 
 
 @end
