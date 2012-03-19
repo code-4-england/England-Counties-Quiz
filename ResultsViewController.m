@@ -16,6 +16,9 @@
 @synthesize resultScoreTextField;
 @synthesize resultTotalQsTextField;
 @synthesize resultMessageField;
+@synthesize resultTextField;
+@synthesize endResultsView;
+@synthesize nextButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,16 +29,91 @@
     return self;
 }
 
+/*
+
 - (void)loadView
 {
     // If you create your views manually, you MUST override this method and use it to create your views.
     // If you use Interface Builder to create your views, then you must NOT override this method.
 }
+ 
+ */
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+    AnswerViewController * answerController = ((AnswerViewController *)self.presentingViewController);
+    
+    
+    
+    
+    GameViewController * gameController = ((GameViewController *)answerController.presentingViewController);
+     
+     
+     
+    if(gameController.countyToGuessNumber == gameController.currentAnswer){
+        
+        resultTextField.text = @"correct";
+        
+        gameController.score += 1;
+        
+        gameController.Lancashire.image = [UIImage imageNamed:@"countyB_green.png"];
+        
+        
+    } else{
+        
+        resultTextField.text = @"wrong";
+    }
+    
+    
+    NSString *scoreString = [NSString stringWithFormat:@"%i",gameController.score];
+    
+    NSString *totalString = [NSString stringWithFormat:@"%i",gameController.totalQuestions];
+    
+    
+    if(gameController.currentTurn == gameController.totalQuestions){
+        
+        
+        
+        
+        NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxEnd of Game");
+        endResultsView.hidden = NO;
+        
+        nextButton.hidden = YES;
+        
+        resultTextField.hidden = YES;
+        
+        
+        
+        if(gameController.score == gameController.totalQuestions){
+           
+            self.resultMessageField.text = @"Well done! Perfect Score!";
+            
+        }
+           
+        if(gameController.score < gameController.totalQuestions){
+            
+            self.resultMessageField.text = @"You didn't get all the answers this time.";
+            
+        }
+           
+        
+        
+        self.resultScoreTextField.text = scoreString;
+    
+        self.resultTotalQsTextField.text = totalString;
+        
+        
+        
+    } else{
+        endResultsView.hidden = YES;
+    }
+
+    
 }
 
 - (void)viewDidUnload
@@ -43,6 +121,9 @@
     [self setResultScoreTextField:nil];
     [self setResultTotalQsTextField:nil];
     [self setResultMessageField:nil];
+    [self setResultTextField:nil];
+    [self setEndResultsView:nil];
+    [self setNextButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -51,5 +132,55 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+- (IBAction)goNextQuestion:(UIButton *)sender {
+    
+    
+    AnswerViewController * answerController = ((AnswerViewController *)self.presentingViewController);
+    
+     
+    GameViewController * gameController = ((GameViewController *)answerController.presentingViewController);
+    
+    
+    [gameController nextQuestion];
+    
+}
+
+- (IBAction)playAgain:(id)sender {
+    
+    AnswerViewController * answerController = ((AnswerViewController *)self.presentingViewController);
+    
+    
+    GameViewController * gameController = ((GameViewController *)answerController.presentingViewController);
+    
+    
+    [gameController replay];    
+    
+}
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    NSLog(@"prepare for seg");
+    
+    //AnswerViewController * answerController = ((AnswerViewController *)self.presentingViewController);
+    
+    //[answerController closeAnswerView];
+    
+}
+
+
+-(void)viewWillDisappear:(BOOL)animated{
+    
+    NSLog(@"Results view will disappear.");
+    
+   
+    
+    [super viewWillDisappear: animated];
+    
+   
+    
+}
+
 
 @end

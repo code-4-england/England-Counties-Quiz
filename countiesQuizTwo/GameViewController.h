@@ -9,13 +9,21 @@
 #import <UIKit/UIKit.h>
 
 @class AnswerViewController;
-
+@class ResultsViewController;
 
 @interface GameViewController : UIViewController
 
 - (void)nextQuestion;
 
 - (void)isAnswerCorrect;
+
+- (IBAction)testModal:(UIButton *)sender;
+
+- (void)gotoResults;
+
+- (void)replay;
+
+@property (strong, nonatomic) IBOutlet UIView *hideGame;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *countiesTextField;

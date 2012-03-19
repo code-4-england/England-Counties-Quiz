@@ -15,5 +15,9 @@
 
 @property int countySelected;
 
+- (IBAction)doneAnswering:(id)sender;
+
+
+- (void)closeAnswerView;
 
 @end

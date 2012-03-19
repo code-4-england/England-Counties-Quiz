@@ -35,10 +35,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSLog(@"test test test>>>> %i", ((GameViewController *)self.presentingViewController).score);
+   // NSLog(@"test test test>>>> %i", ((GameViewController *)self.presentingViewController).score);
     
 
-    
     
 }
 
@@ -81,10 +80,23 @@
     
 }
 
-- (IBAction)didFinishSelectingAnswer:(id)sender {
 
+
+- (IBAction)doneAnswering:(id)sender {
     
-    //NSLog(@">>>>>>>>>>>>>>>>>> description %i",((CountyNavController *)self.presentingViewController).currentCountyToGuess);
+    
+    GameViewController * gameController = ((GameViewController *)self.presentingViewController);
+    
+    
+    //gameController.hideGame.hidden = NO;
+    
+    [gameController gotoResults]; 
+    
+    //[self dismissModalViewControllerAnimated:YES];
+    
+}
+
+- (void)closeAnswerView {
     
     
     [self dismissModalViewControllerAnimated:YES];
@@ -103,15 +115,19 @@
     
    // NSLog(@"*************** %@",[[self delegate] description]);
     
-    
+/*    
     
     GameViewController *gameViewController = ((GameViewController *)self.presentingViewController);
     
     [gameViewController isAnswerCorrect];
     
      
+    
+  
+ */
+    
     [super viewWillDisappear: animated];
-                     
+ 
       //NSLog(@">*>*>*>*>*>*>* %@", self.presentingViewController.description);
     
     

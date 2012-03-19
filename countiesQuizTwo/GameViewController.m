@@ -8,12 +8,14 @@
 
 #import "GameViewController.h"
 #import "AnswerViewController.h"
+#import "ResultsViewController.h"
 
 @interface GameViewController ()
 
 @end
 
 @implementation GameViewController
+@synthesize hideGame;
 @synthesize countiesTextField;
 @synthesize Devon;
 @synthesize Lancashire;
@@ -31,16 +33,58 @@
 @synthesize totalQuestions;
 
 
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+
+    
+    
     }
     return self;
     
     
 }
+
+
+-(void)resetGame{
+    
+    
+    NSLog(@"RESET GAME");
+    
+    
+    
+    self.score = 0;
+    
+    self.totalQuestions = 5;
+    
+    self.currentTurn = 1;        
+    
+    NSString * scoreString = [NSString stringWithFormat:@"%i", 0];
+    
+    [self.scoreText setText:scoreString];    
+    
+    self.totalQuestionsText.text = [NSString stringWithFormat:@"%i", self.totalQuestions];
+    
+    self.questionNumberText.text = [NSString stringWithFormat:@"%i", self.currentTurn];
+    
+    int randomCounty = arc4random() % 4;
+    
+    self.countyToGuessNumber = randomCounty;
+    
+    NSMutableArray *allCounties = [[NSMutableArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
+    
+	NSMutableArray *currentCounty = [[NSMutableArray alloc] init];
+    
+    [currentCounty addObject:[allCounties objectAtIndex:randomCounty]];
+    
+    [[currentCounty objectAtIndex:0] setHighlighted:YES];    
+    
+}
+
 
 
 - (void)nextQuestion
@@ -49,11 +93,21 @@
     
     NSLog(@"NEXT QUESTION");
     
+    ResultsViewController * resultController = ((ResultsViewController *)self.presentedViewController);
+    
+    [resultController dismissModalViewControllerAnimated:NO]; 
+    
+    AnswerViewController * answerController = ((AnswerViewController *)self.presentedViewController);
+    
+    [answerController dismissModalViewControllerAnimated:NO];   
+    
+    NSString * scoreString = [NSString stringWithFormat:@"%i", self.score];
+    
+    [self.scoreText setText:scoreString]; 
+    
     int randomCounty = arc4random() % 4;
 
     self.currentTurn += 1;
-    
-
     
     self.questionNumberText.text = [NSString stringWithFormat:@"%i", self.currentTurn];
     
@@ -78,56 +132,17 @@
 }
 
 
-/*
-- (void)loadView
-{
-    // If you create your views manually, you MUST override this method and use it to create your views.
-    // If you use Interface Builder to create your views, then you must NOT override this method.
-}
-*/
+
+
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    
-    [self performSegueWithIdentifier:@"toResult" sender:self];
-    
-    NSLog(@">>>>>>>>>>>>> %@ <<<<<<<<<<<<<<<<", self.description);
-    
-    self.score = 0;
-    
-    self.totalQuestions = 5;
-    
-    self.currentTurn = 1;
-    
-    self.totalQuestionsText.text = [NSString stringWithFormat:@"%i", self.totalQuestions];
-    
-    self.questionNumberText.text = [NSString stringWithFormat:@"%i", self.currentTurn];
-    
-    int randomCounty = arc4random() % 4;
-    
-    self.countyToGuessNumber = randomCounty;
-    
-    NSString * scoreString = [NSString stringWithFormat:@"%i", 0];
-    
-    [self.scoreText setText:scoreString];
-    
-    //NSLog(@"countyToGuessNumber %i", ((CountyNavController *)self.parentViewController).currentCountyToGuess);
-
-    
-    NSMutableArray *allCounties = [[NSMutableArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
-    
-	NSMutableArray *currentCounty = [[NSMutableArray alloc] init];
-     
-    [currentCounty addObject:[allCounties objectAtIndex:randomCounty]];
-    
-    //NSLog(@"name>>> %@",[currentCounty objectAtIndex:0]);
-    
-    [[currentCounty objectAtIndex:0] setHighlighted:YES];
-    
-    
-    
     
     NSLog(@"Game screen loaded");
+    
+    [super viewDidLoad];
+    
+    [self resetGame];
+
 }
 
 
@@ -138,6 +153,8 @@
 }
 
 - (void)isAnswerCorrect{
+    
+    /*
     NSLog(@"Is answer correct");
    
     if(self.currentAnswer == self.countyToGuessNumber){
@@ -149,62 +166,99 @@
         
         scoreText.text = scoreString;
         
-        
-        UIAlertView *alertDialog;
-        alertDialog = [[UIAlertView alloc]
-                       initWithTitle:@"Result" message:@"Correct!" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
-        alertDialog.alertViewStyle=UIAlertViewStyleDefault;
-        [alertDialog show];
-        
         if(self.currentTurn == self.totalQuestions){
             
             NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxGo to result screen");
             
-            [self performSegueWithIdentifier:@"toResults" sender:self];
+            NSString * myString = [NSString  stringWithFormat: @"%@", [self description]];
+            
+            NSLog(@"SELF DESCRIPTION: %@", myString);
+            
+            [self gotoResults];  
+            
+            
         } else{
             [self nextQuestion];
         }
         
     } else {
         NSLog(@"WRONG!!!");
-        
-        UIAlertView *alertDialog;
-        alertDialog = [[UIAlertView alloc]
-                       initWithTitle:@"Result" message:@"Wrong!!!" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
-        alertDialog.alertViewStyle=UIAlertViewStyleDefault;
-        [alertDialog show];
-        
+ 
         if(self.currentTurn == self.totalQuestions){
             
             NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxGo to result screen");
             
-            [self performSegueWithIdentifier:@"toResults" sender:self];
+            NSString * myString = [NSString  stringWithFormat: @"%@", [self description]];
+            
+            NSLog(@"SELF DESCRIPTION: %@", myString);
+                                                   
+            [self gotoResults];  
+            
+            
         } else{
             [self nextQuestion];
         }
         
     }
-     
+     */
     
 }
 
 
+- (void)gotoResults {
+    
+    
+    
+    NSLog(@"to Results");
+    
+    
+    AnswerViewController * answerController = ((AnswerViewController *)self.presentedViewController);
+    
+    //[answerController dismissModalViewControllerAnimated:YES];    
+    
+    [answerController performSegueWithIdentifier:@"toResults" sender:answerController];
+    
+    
+}
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+
+- (IBAction)testModal:(UIButton *)sender {
+    
+    
+    NSLog(@"button pressed");
+    
+
+    
+    [self performSegueWithIdentifier:@"toResults" sender:self];
+    
+    
+}
+
+
+- (void)replay
 {
     
-    NSLog(@"********************prepare for segue");
-    /*
-    AnswerViewController *answerViewController = [[[segue destinationViewController] viewControllers] objectAtIndex:0];
+    NSLog(@"REPLAY");
     
-    //answerViewController.delegate = self;
-    */
+    ResultsViewController * resultController = ((ResultsViewController *)self.presentedViewController);
+    
+    [resultController dismissModalViewControllerAnimated:NO]; 
+    
+    AnswerViewController * answerController = ((AnswerViewController *)self.presentedViewController);
+    
+    [answerController dismissModalViewControllerAnimated:NO];   
+    
+    [self resetGame];
+    
 }
 
 
 
 - (void)viewDidUnload
 {
+    
+    NSLog(@"Game view controller did unload.");
+    
     [self setCountiesTextField:nil];
     [self setDevon:nil];
     [self setLancashire:nil];
@@ -215,6 +269,7 @@
     [self setScoreText:nil];
     [self setQuestionNumberText:nil];
     [self setTotalQuestionsText:nil];
+    [self setHideGame:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
