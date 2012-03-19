@@ -49,8 +49,6 @@
     AnswerViewController * answerController = ((AnswerViewController *)self.presentingViewController);
     
     
-    
-    
     GameViewController * gameController = ((GameViewController *)answerController.presentingViewController);
      
      
@@ -61,7 +59,13 @@
         
         gameController.score += 1;
         
-        gameController.Lancashire.image = [UIImage imageNamed:@"countyB_green.png"];
+        NSString * currentImage = [NSString stringWithFormat:@"%@_green.png", [gameController.imageNameArray objectAtIndex:gameController.countyToGuessNumber]];  
+        
+        NSLog(@"00000000000000%@",currentImage);
+        
+        
+        [[gameController.currentCountyArray objectAtIndex:0] setImage:[UIImage imageNamed:currentImage]];
+        
         
         
     } else{

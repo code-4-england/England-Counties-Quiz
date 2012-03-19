@@ -15,10 +15,6 @@
 
 - (void)nextQuestion;
 
-- (void)isAnswerCorrect;
-
-- (IBAction)testModal:(UIButton *)sender;
-
 - (void)gotoResults;
 
 - (void)replay;
@@ -43,6 +39,15 @@
 @property (strong, nonatomic) IBOutlet UITextField *questionNumberText;
 
 @property (strong, nonatomic) IBOutlet UITextField *totalQuestionsText;
+
+@property (strong, nonatomic) NSMutableArray *imageNameArray;
+
+
+@property (strong, nonatomic) NSMutableArray *allCountiesArray;
+
+
+@property (strong, nonatomic) NSMutableArray *currentCountyArray;
+
 
 @property int currentAnswer;
 

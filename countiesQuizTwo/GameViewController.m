@@ -32,6 +32,11 @@
 @synthesize currentTurn;
 @synthesize totalQuestions;
 
+@synthesize imageNameArray;
+
+@synthesize allCountiesArray;
+
+@synthesize currentCountyArray;
 
 
 
@@ -75,13 +80,15 @@
     
     self.countyToGuessNumber = randomCounty;
     
-    NSMutableArray *allCounties = [[NSMutableArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
+    allCountiesArray = [[NSMutableArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
     
-	NSMutableArray *currentCounty = [[NSMutableArray alloc] init];
+    imageNameArray = [[NSMutableArray alloc] initWithObjects:@"countyA",@"countyC",@"countyD",@"countyE",@"countyB", nil];
     
-    [currentCounty addObject:[allCounties objectAtIndex:randomCounty]];
+	currentCountyArray = [[NSMutableArray alloc] init];
     
-    [[currentCounty objectAtIndex:0] setHighlighted:YES];    
+    [currentCountyArray addObject:[allCountiesArray objectAtIndex:randomCounty]];
+    
+    [[currentCountyArray objectAtIndex:0] setHighlighted:YES];    
     
 }
 
@@ -113,11 +120,11 @@
     
     self.countyToGuessNumber = randomCounty;
     
-    NSMutableArray *allCounties = [[NSMutableArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
+    allCountiesArray = [[NSMutableArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
     
 	NSMutableArray *currentCounty = [[NSMutableArray alloc] init];
     
-    [currentCounty addObject:[allCounties objectAtIndex:randomCounty]];
+    [currentCounty addObject:[allCountiesArray objectAtIndex:randomCounty]];
     
     //NSLog(@"name>>> %@",[currentCounty objectAtIndex:0]);
     
@@ -152,57 +159,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)isAnswerCorrect{
-    
-    /*
-    NSLog(@"Is answer correct");
-   
-    if(self.currentAnswer == self.countyToGuessNumber){
-        NSLog(@"CORRECT!!!");
-        
-        self.score += 1;
-         
-        NSString* scoreString = [NSString stringWithFormat:@"%i", self.score];
-        
-        scoreText.text = scoreString;
-        
-        if(self.currentTurn == self.totalQuestions){
-            
-            NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxGo to result screen");
-            
-            NSString * myString = [NSString  stringWithFormat: @"%@", [self description]];
-            
-            NSLog(@"SELF DESCRIPTION: %@", myString);
-            
-            [self gotoResults];  
-            
-            
-        } else{
-            [self nextQuestion];
-        }
-        
-    } else {
-        NSLog(@"WRONG!!!");
- 
-        if(self.currentTurn == self.totalQuestions){
-            
-            NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxGo to result screen");
-            
-            NSString * myString = [NSString  stringWithFormat: @"%@", [self description]];
-            
-            NSLog(@"SELF DESCRIPTION: %@", myString);
-                                                   
-            [self gotoResults];  
-            
-            
-        } else{
-            [self nextQuestion];
-        }
-        
-    }
-     */
-    
-}
 
 
 - (void)gotoResults {
