@@ -17,11 +17,7 @@
 @implementation GameViewController
 @synthesize hideGame;
 @synthesize countiesTextField;
-@synthesize Devon;
-@synthesize Lancashire;
-@synthesize Yorkshire;
-@synthesize London;
-@synthesize Cornwall;
+
 @synthesize scoreText;
 @synthesize questionNumberText;
 @synthesize totalQuestionsText;
@@ -32,13 +28,64 @@
 @synthesize currentTurn;
 @synthesize totalQuestions;
 
+@synthesize totalCounties;
+@synthesize countyNameArray;
+
 @synthesize imageNameArray;
-
 @synthesize allCountiesArray;
-
 @synthesize currentCountyArray;
-
 @synthesize usedCountiesArray;
+
+@synthesize northumberland;
+@synthesize durham;
+@synthesize cumbria;
+@synthesize tyneAndWear;
+@synthesize northYorkshire;
+@synthesize lancashire;
+@synthesize westYorkshire;
+@synthesize eastRiding;
+@synthesize cornwall;
+@synthesize devon;
+@synthesize dorset;
+@synthesize somerset;
+@synthesize hampshire;
+@synthesize westSussex;
+@synthesize eastSussex;
+@synthesize kent;
+@synthesize isleOfWight;
+@synthesize wiltshire;
+@synthesize berkshire;
+@synthesize surry;
+@synthesize greaterLondon;
+@synthesize essex;
+@synthesize hertfordshire;
+@synthesize buckinghamshire;
+@synthesize oxfordshire;
+@synthesize gloucestershire;
+@synthesize herefordshire;
+@synthesize worcestershire;
+@synthesize warwickshire;
+@synthesize bedfordshire;
+@synthesize cambridgeshire;
+@synthesize suffolk;
+@synthesize norfolk;
+@synthesize leicestershire;
+@synthesize northamptonshire;
+@synthesize rutland;
+@synthesize bristol;
+@synthesize lincolnshire;
+@synthesize southYorkshire;
+@synthesize greaterManchester;
+@synthesize merseyside;
+@synthesize cheshire;
+@synthesize staffordshire;
+@synthesize derbyshire;
+@synthesize nottinghamshire;
+@synthesize shropshire;
+@synthesize westMidlands;
+
+
+
 
 
 
@@ -62,11 +109,11 @@
     
     NSLog(@"RESET GAME");
     
-    
-    
     self.score = 0;
     
-    self.totalQuestions = 5;
+    self.totalQuestions = 47;
+    
+    self.totalCounties = 47;
     
     self.currentTurn = 1;  
     
@@ -82,7 +129,7 @@
     
     NSNumber *randomCounty = [[NSNumber alloc] initWithInt:999999];
     
-    randomCounty = [NSNumber numberWithInt:arc4random() % 5];
+    randomCounty = [NSNumber numberWithInt:arc4random() % self.totalCounties];
         
     NSLog(@">>>>>>random county: %@",randomCounty);
         
@@ -90,9 +137,13 @@
     
     self.countyToGuessNumber = [randomCounty intValue];
     
-    allCountiesArray = [[NSArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
+    //////////////***************************************************
     
-    imageNameArray = [[NSArray alloc] initWithObjects:@"countyA",@"countyC",@"countyD",@"countyE",@"countyB", nil];
+    //allCountiesArray = [[NSArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
+    
+    //imageNameArray = [[NSArray alloc] initWithObjects:@"countyA",@"countyC",@"countyD",@"countyE",@"countyB", nil];
+    
+    //////////////***************************************************
     
     [usedCountiesArray addObject:randomCounty]; 
     
@@ -104,22 +155,31 @@
     
     [currentCountyArray addObject:[allCountiesArray objectAtIndex:countyToGuessNumber]];
     
+    NSString *descriptionOne = [currentCountyArray description];
     
+    NSLog(@">>>>>>>>>>>> %@",descriptionOne);
+    
+    /*
     [Devon setImage:[UIImage imageNamed:@"countyA.png"]];
     [Cornwall setImage:[UIImage imageNamed:@"countyC.png"]];
     [Yorkshire setImage:[UIImage imageNamed:@"countyD.png"]];
     [London setImage:[UIImage imageNamed:@"countyE.png"]];
     [Lancashire setImage:[UIImage imageNamed:@"countyB.png"]];
-
+*/
     
+    //////////////***************************************************
+    
+    // USE array?
+    
+    /*
     [Devon setHighlighted:NO];
     [Cornwall setHighlighted:NO];
     [Yorkshire setHighlighted:NO];
     [London setHighlighted:NO];
     [Lancashire setHighlighted:NO];
+    */
     
-    
-    [[currentCountyArray objectAtIndex:0] setHighlighted:YES];    
+    //[[currentCountyArray objectAtIndex:0] setHighlighted:YES];    
     
 }
 
@@ -151,7 +211,7 @@
     
     do{
     
-        randomCounty = [NSNumber numberWithInt:arc4random() % 5];
+        randomCounty = [NSNumber numberWithInt:arc4random() % self.totalCounties];
         
         NSLog(@">>>>>>random county: %@",randomCounty);
         
@@ -179,11 +239,19 @@
     
     //NSLog(@"name>>> %@",[currentCounty objectAtIndex:0]);
     
+    
+    /// ********************************************************
+    //USE ARRAY
+    
+    /*
     [Devon setHighlighted:NO];
     [Cornwall setHighlighted:NO];
     [Yorkshire setHighlighted:NO];
     [London setHighlighted:NO];
     [Lancashire setHighlighted:NO];
+    */
+    
+    
     
     [[currentCountyArray objectAtIndex:0] setHighlighted:YES];
     
@@ -198,6 +266,158 @@
     NSLog(@"Game screen loaded");
     
     [super viewDidLoad];
+    
+    self.countyNameArray = [NSArray arrayWithObjects:
+                               @"Bedfordshire",
+                               @"Berkshire",
+                               @"City of Bristol",
+                               @"Buckinghamshire",
+                               @"Cambridgeshire",
+                               @"Cheshire",
+                               @"Cornwall",
+                               @"Cumbria",
+                               @"Derbyshire",
+                               @"Devon",
+                               @"Dorset",
+                               @"Durham",
+                               @"East Sussex",
+                               @"Essex",
+                               @"Gloucestershire",
+                               @"Greater London",
+                               @"Greater Manchester",
+                               @"Hampshire",
+                               @"Herefordshire",
+                               @"Hertfordshire",
+                               @"Isle of Wight",
+                               @"Kent",
+                               @"Lancashire",
+                               @"Leicestershire",
+                               @"Lincolnshire",
+                               @"Merseyside",
+                               @"Norfolk",
+                               @"Northamptonshire",
+                               @"Northumberland",
+                               @"North Yorkshire",
+                               @"Nottinghamshire",
+                               @"Oxfordshire",
+                               @"Rutland",
+                               @"Shropshire",
+                               @"Somerset",
+                               @"South Yorkshire",
+                               @"Staffordshire",
+                               @"Suffolk",
+                               @"Surrey",
+                               @"Tyne and Wear",
+                               @"Warwickshire",
+                               @"West Midlands",
+                               @"West Sussex",
+                               @"West Yorkshire",
+                               @"Wiltshire",
+                               @"Worcestershire",
+                               @"Yorkshire, East Riding", nil];
+    
+    self.allCountiesArray = [NSArray arrayWithObjects:
+                             @"bedfordshire",
+                             @"berkshire",
+                             @"bristol",
+                             @"buckinghamshire",
+                             @"cambridgeshire",
+                             @"cheshire",
+                             @"cornwall",
+                             @"cumbria",
+                             @"derbyshire",
+                             @"devon",
+                             @"dorset",
+                             @"durham",
+                             @"eastSussex",
+                             @"essex",
+                             @"gloucestershire",
+                             @"greaterLondon",
+                             @"greaterManchester",
+                             @"hampshire",
+                             @"herefordshire",
+                             @"hertfordshire",
+                             @"isleOfWight",
+                             @"kent",
+                             @"lancashire",
+                             @"leicestershire",
+                             @"lincolnshire",
+                             @"merseyside",
+                             @"norfolk",
+                             @"northamptonshire",
+                             @"northumberland",
+                             @"north Yorkshire",
+                             @"nottinghamshire",
+                             @"oxfordshire",
+                             @"rutland",
+                             @"shropshire",
+                             @"somerset",
+                             @"southYorkshire",
+                             @"staffordshire",
+                             @"suffolk",
+                             @"surrey",
+                             @"tyneAndWear",
+                             @"warwickshire",
+                             @"westWidlands",
+                             @"westSussex",
+                             @"westYorkshire",
+                             @"wiltshire",
+                             @"worcestershire",
+                             @"eastRiding", nil];
+
+    self.imageNameArray = [NSArray arrayWithObjects:
+                           @"bedfordshire",
+                           @"berkshire",
+                           @"bristol",
+                           @"buckinghamshire",
+                           @"cambridgeshire",
+                           @"cheshire",
+                           @"cornwall",
+                           @"cumbria",
+                           @"derbyshire",
+                           @"devon",
+                           @"dorset",
+                           @"durham",
+                           @"east_sussex",
+                           @"essex",
+                           @"gloucestershire",
+                           @"greater_london",
+                           @"greater_manchester",
+                           @"hampshire",
+                           @"herefordshire",
+                           @"hertfordshire",
+                           @"isle_of_wight",
+                           @"kent",
+                           @"lancashire",
+                           @"leicestershire",
+                           @"lincolnshire",
+                           @"merseyside",
+                           @"norfolk",
+                           @"northamptonshire",
+                           @"northumberland",
+                           @"north_yorkshire",
+                           @"nottinghamshire",
+                           @"oxfordshire",
+                           @"rutland",
+                           @"shropshire",
+                           @"somerset",
+                           @"south_yorkshire",
+                           @"staffordshire",
+                           @"suffolk",
+                           @"surrey",
+                           @"tyne_and_wear",
+                           @"warwickshire",
+                           @"west_midlands",
+                           @"west_sussex",
+                           @"west_yorkshire",
+                           @"wiltshire",
+                           @"worcestershire",
+                           @"east_riding_of_yorkshire", nil];
+
+
+    
+    
+    
     
     [self resetGame];
 
@@ -229,18 +449,6 @@
 }
 
 
-- (IBAction)testModal:(UIButton *)sender {
-    
-    
-    NSLog(@"button pressed");
-    
-
-    
-    [self performSegueWithIdentifier:@"toResults" sender:self];
-    
-    
-}
-
 
 - (void)replay
 {
@@ -269,14 +477,59 @@
     [self setCountiesTextField:nil];
     [self setDevon:nil];
     [self setLancashire:nil];
-    [self setYorkshire:nil];
-    [self setLondon:nil];
-    [self setYorkshire:nil];
     [self setCornwall:nil];
     [self setScoreText:nil];
     [self setQuestionNumberText:nil];
     [self setTotalQuestionsText:nil];
     [self setHideGame:nil];
+    [self setNorthumberland:nil];
+    [self setCumbria:nil];
+    [self setTyneAndWear:nil];
+    [self setDurham:nil];
+    [self setNorthYorkshire:nil];
+    [self setLancashire:nil];
+    [self setWestYorkshire:nil];
+    [self setEastRiding:nil];
+    [self setSouthYorkshire:nil];
+    [self setGreaterManchester:nil];
+    [self setMerseyside:nil];
+    [self setCheshire:nil];
+    [self setStaffordshire:nil];
+    [self setDerbyshire:nil];
+    [self setLincolnshire:nil];
+    [self setNottinghamshire:nil];
+    [self setShropshire:nil];
+    [self setWestMidlands:nil];
+    [self setCornwall:nil];
+    [self setDevon:nil];
+    [self setDorset:nil];
+    [self setSomerset:nil];
+    [self setHampshire:nil];
+    [self setWestSussex:nil];
+    [self setEastSussex:nil];
+    [self setKent:nil];
+    [self setIsleOfWight:nil];
+    [self setWiltshire:nil];
+    [self setBerkshire:nil];
+    [self setSurry:nil];
+    [self setGreaterLondon:nil];
+    [self setEssex:nil];
+    [self setHertfordshire:nil];
+    [self setBuckinghamshire:nil];
+    [self setOxfordshire:nil];
+    [self setGloucestershire:nil];
+    [self setHerefordshire:nil];
+    [self setWorcestershire:nil];
+    [self setWarwickshire:nil];
+    [self setBedfordshire:nil];
+    [self setCambridgeshire:nil];
+    [self setSuffolk:nil];
+    [self setNorfolk:nil];
+    [self setLincolnshire:nil];
+    [self setLeicestershire:nil];
+    [self setNorthamptonshire:nil];
+    [self setRutland:nil];
+    [self setBristol:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

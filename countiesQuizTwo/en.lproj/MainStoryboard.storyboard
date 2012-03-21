@@ -272,7 +272,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="north_yorkshire.png" highlightedImage="north_yorkshire_red.png" id="sK4-97-2Wx">
-                                <rect key="frame" x="146" y="106" width="89" height="88"/>
+                                <rect key="frame" x="146" y="106" width="89" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="west_yorkshire.png" highlightedImage="west_yorkshire_red.png" id="UWr-G6-J8z">
@@ -280,7 +280,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="lancashire.png" highlightedImage="lancashire_red.png" id="jCc-vL-Pnc">
-                                <rect key="frame" x="108" y="142" width="83" height="53"/>
+                                <rect key="frame" x="108" y="142" width="81" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="greater_manchester.png" highlightedImage="greater_manchester_red.png" id="xfq-Vq-ItG">
@@ -292,7 +292,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="northamptonshire.png" highlightedImage="northamptonshire_red.png" id="5Jp-V1-Weq">
-                                <rect key="frame" x="169" y="244" width="83" height="48"/>
+                                <rect key="frame" x="170" y="242" width="82" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="rutland.png" highlightedImage="rutland_red.png" id="DyO-Vc-ElN">
@@ -315,15 +315,66 @@
                                 <rect key="frame" x="165" y="81" width="40" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="bristol.png" highlightedImage="bristol_red.png" id="r9W-vz-YXs">
+                                <rect key="frame" x="120" y="304" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="PtX-dk-awE"/>
                     <connections>
+                        <outlet property="bedfordshire" destination="FW0-X3-9Jn" id="OEb-O3-xIM"/>
+                        <outlet property="berkshire" destination="fRw-2h-MIc" id="uRd-Ky-G5c"/>
+                        <outlet property="bristol" destination="r9W-vz-YXs" id="sEV-nG-10h"/>
+                        <outlet property="buckinghamshire" destination="AgP-M3-yNa" id="ngm-0c-joX"/>
+                        <outlet property="cambridgeshire" destination="GJH-wF-NaA" id="vUk-gs-utp"/>
+                        <outlet property="cheshire" destination="BwS-Eh-WRp" id="Mad-gc-VAE"/>
+                        <outlet property="cornwall" destination="YIG-nz-P5E" id="Q5K-6d-oOW"/>
+                        <outlet property="cumbria" destination="oxs-yX-dlP" id="tCx-9V-rxr"/>
+                        <outlet property="derbyshire" destination="kfk-gz-bka" id="ieX-3t-xF4"/>
+                        <outlet property="devon" destination="54Z-IB-X9d" id="b2G-ry-wlo"/>
+                        <outlet property="dorset" destination="K8a-Y1-AFV" id="Gff-G2-Gsu"/>
+                        <outlet property="durham" destination="wDy-1T-17T" id="qP6-rz-bPt"/>
+                        <outlet property="eastRiding" destination="MMw-mz-DSY" id="oIf-qY-DqT"/>
+                        <outlet property="eastSussex" destination="HN1-nA-slV" id="0MI-Ir-Mx5"/>
+                        <outlet property="essex" destination="Bbe-s3-nkh" id="GGb-W7-0SL"/>
+                        <outlet property="gloucestershire" destination="iwS-cb-Qnt" id="XdS-pW-69F"/>
+                        <outlet property="greaterLondon" destination="FrA-JQ-aCP" id="k8N-LD-4aj"/>
+                        <outlet property="greaterManchester" destination="xfq-Vq-ItG" id="TOO-tg-0BL"/>
+                        <outlet property="hampshire" destination="fFm-kL-G4s" id="p01-vi-JvY"/>
+                        <outlet property="herefordshire" destination="63K-8W-ZiN" id="p6g-Kp-pKj"/>
+                        <outlet property="hertfordshire" destination="9c0-pq-1zT" id="4dY-df-5TN"/>
                         <outlet property="hideGame" destination="Wye-Zv-ecG" id="0uT-9x-dZ6"/>
+                        <outlet property="isleOfWight" destination="Z8X-vp-o8o" id="luJ-jd-eeM"/>
+                        <outlet property="kent" destination="a6F-hJ-XZN" id="ALf-qj-ffo"/>
+                        <outlet property="lancashire" destination="jCc-vL-Pnc" id="CFh-1H-kNN"/>
+                        <outlet property="leicestershire" destination="gnZ-Pn-fgO" id="bgg-bH-etU"/>
+                        <outlet property="lincolnshire" destination="Khy-eq-rJk" id="cLG-C3-WEX"/>
+                        <outlet property="merseyside" destination="S53-5H-vbo" id="m3h-cd-XJu"/>
+                        <outlet property="norfolk" destination="6qP-Xs-JHs" id="kwv-ea-uDc"/>
+                        <outlet property="northYorkshire" destination="sK4-97-2Wx" id="wtm-29-Ntj"/>
+                        <outlet property="northamptonshire" destination="5Jp-V1-Weq" id="I4G-Wx-4lE"/>
+                        <outlet property="northumberland" destination="Y7y-6D-SUl" id="kMP-gm-BYX"/>
+                        <outlet property="nottinghamshire" destination="kEI-wz-RUE" id="1Rk-iJ-dXg"/>
+                        <outlet property="oxfordshire" destination="qX1-QK-gvt" id="76f-my-iDc"/>
                         <outlet property="questionNumberText" destination="QIh-oC-u6j" id="ur0-mb-AD8"/>
+                        <outlet property="rutland" destination="DyO-Vc-ElN" id="wPd-7v-1z6"/>
                         <outlet property="scoreText" destination="L0j-dq-oyc" id="6Zh-WC-yQj"/>
+                        <outlet property="shropshire" destination="ba5-Pd-3Z9" id="aS4-N3-mqx"/>
+                        <outlet property="somerset" destination="4v7-c0-OW6" id="Dod-By-dWb"/>
+                        <outlet property="southYorkshire" destination="Jlm-mI-ERo" id="rzn-Rv-Zgw"/>
+                        <outlet property="staffordshire" destination="QKf-V9-POy" id="rED-Bg-ppm"/>
+                        <outlet property="suffolk" destination="yoS-Lm-kxj" id="dAj-cw-46F"/>
+                        <outlet property="surry" destination="y4J-R9-JfX" id="TC3-QB-BAM"/>
                         <outlet property="totalQuestionsText" destination="Fam-bc-xQR" id="1NZ-Ho-AQv"/>
+                        <outlet property="tyneAndWear" destination="WAt-wK-zNK" id="VUA-IV-qRF"/>
+                        <outlet property="warwickshire" destination="2ds-dN-Nbw" id="ZNk-A4-EAA"/>
+                        <outlet property="westMidlands" destination="JzE-rv-LtS" id="7aL-Gb-SXu"/>
+                        <outlet property="westSussex" destination="H5j-vT-9s8" id="n63-M2-0SQ"/>
+                        <outlet property="westYorkshire" destination="UWr-G6-J8z" id="I2f-1R-vTR"/>
+                        <outlet property="wiltshire" destination="hap-V6-MIK" id="wcr-kV-ZUS"/>
+                        <outlet property="worcestershire" destination="y83-7S-Pve" id="OTL-n7-mUC"/>
                     </connections>
                 </viewController>
             </objects>
@@ -502,6 +553,8 @@
         <image name="bedfordshire_red.png" width="30" height="40"/>
         <image name="berkshire.png" width="50" height="20"/>
         <image name="berkshire_red.png" width="50" height="20"/>
+        <image name="bristol.png" width="17" height="18"/>
+        <image name="bristol_red.png" width="17" height="18"/>
         <image name="buckinghamshire.png" width="35" height="55"/>
         <image name="buckinghamshire_red.png" width="35" height="55"/>
         <image name="cambridgeshire.png" width="50" height="55"/>
@@ -598,16 +651,58 @@
         <class className="GameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="Cornwall" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Devon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Lancashire" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="London" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="Yorkshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bedfordshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="berkshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="bristol" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="buckinghamshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cambridgeshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cheshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cornwall" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="countiesTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="cumbria" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="derbyshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="devon" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="dorset" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="durham" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="eastRiding" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="eastSussex" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="essex" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="gloucestershire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="greaterLondon" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="greaterManchester" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="hampshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="herefordshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="hertfordshire" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="hideGame" candidateClass="UIView"/>
+                <relationship kind="outlet" name="isleOfWight" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="kent" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lancashire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="leicestershire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lincolnshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="merseyside" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="norfolk" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="northYorkshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="northamptonshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="northumberland" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nottinghamshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="oxfordshire" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="questionNumberText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="rutland" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="scoreText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="shropshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="somerset" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="southYorkshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="staffordshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="suffolk" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="surry" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="totalQuestionsText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="tyneAndWear" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="warwickshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="westMidlands" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="westSussex" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="westYorkshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="wiltshire" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="worcestershire" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="ResultsViewController" superclassName="UIViewController">

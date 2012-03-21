@@ -70,59 +70,13 @@
     
     //NOTE: I've missed out city of London - don't think this is really county.
     
-    NSArray * countiesArray = [NSArray arrayWithObjects:
-    @"Avon",
-    @"Bedfordshire",
-    @"Berkshire",
-    @"City of Bristol",
-    @"Buckinghamshire",
-    @"Cambridgeshire",
-    @"Cheshire",
-    @"Cornwall",
-    @"Cumbria",
-    @"Derbyshire",
-    @"Devon",
-    @"Dorset",
-    @"Durham",
-    @"East Sussex",
-    @"Essex",
-    @"Gloucestershire",
-    @"Greater London",
-    @"Greater Manchester",
-    @"Hampshire",
-    @"Herefordshire",
-    @"Hertfordshire",
-    @"Isle of Wight",
-    @"Kent",
-    @"Lancashire",
-    @"Leicestershire",
-    @"Lincolnshire",
-    @"Merseyside",
-    @"Norfolk",
-    @"Northamptonshire",
-    @"Northumberland",
-    @"North Yorkshire",
-    @"Nottinghamshire",
-    @"Oxfordshire",
-    @"Rutland",
-    @"Shropshire",
-    @"Somerset",
-    @"South Yorkshire",
-    @"Staffordshire",
-    @"Suffolk",
-    @"Surrey",
-    @"Tyne and Wear",
-    @"Warwickshire",
-    @"West Midlands",
-    @"West Sussex",
-    @"West Yorkshire",
-    @"Wiltshire",
-    @"Worcestershire",
-    @"Yorkshire, East Riding", nil];
-                               
     
+    // PUT IN Game Controller ************************************
     
-	return [countiesArray objectAtIndex:row]; 
+                                
+    NSArray *pickerArray = ((GameViewController *)self.presentingViewController).countyNameArray;
+    
+	return [pickerArray objectAtIndex:row]; 
 }
 
 - (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component { 
