@@ -61,7 +61,7 @@
         
         NSString * currentImage = [NSString stringWithFormat:@"%@_green.png", [gameController.imageNameArray objectAtIndex:gameController.countyToGuessNumber]];  
         
-        NSLog(@"00000000000000%@",currentImage);
+        NSLog(@"current image to replace %@",currentImage);
         
         [[gameController.currentCountyArray objectAtIndex:0] setImage:[UIImage imageNamed:currentImage]];
         
@@ -71,7 +71,7 @@
         
         NSString * currentImage = [NSString stringWithFormat:@"%@_grey.png", [gameController.imageNameArray objectAtIndex:gameController.countyToGuessNumber]];  
         
-        NSLog(@"00000000000000%@",currentImage);
+        NSLog(@"current image to replace %@",currentImage);
         
         [[gameController.currentCountyArray objectAtIndex:0] setImage:[UIImage imageNamed:currentImage]];
     }

@@ -55,7 +55,7 @@
 @synthesize isleOfWight;
 @synthesize wiltshire;
 @synthesize berkshire;
-@synthesize surry;
+@synthesize surrey;
 @synthesize greaterLondon;
 @synthesize essex;
 @synthesize hertfordshire;
@@ -155,9 +155,11 @@
     
     [currentCountyArray addObject:[allCountiesArray objectAtIndex:countyToGuessNumber]];
     
-    NSString *descriptionOne = [currentCountyArray description];
+    //NSString *descriptionOne = [currentCountyArray description];
     
-    NSLog(@">>>>>>>>>>>> %@",descriptionOne);
+    //NSLog(@">>>>>>>>>>>> %@",descriptionOne);
+    NSLog(@"name>>> %@",[currentCountyArray objectAtIndex:0]);
+    
     
     /*
     [Devon setImage:[UIImage imageNamed:@"countyA.png"]];
@@ -171,15 +173,56 @@
     
     // USE array?
     
-    /*
-    [Devon setHighlighted:NO];
-    [Cornwall setHighlighted:NO];
-    [Yorkshire setHighlighted:NO];
-    [London setHighlighted:NO];
-    [Lancashire setHighlighted:NO];
-    */
     
-    //[[currentCountyArray objectAtIndex:0] setHighlighted:YES];    
+    [bedfordshire setHighlighted:NO];
+    [berkshire setHighlighted:NO];
+    [buckinghamshire setHighlighted:NO];
+    [cheshire setHighlighted:NO];
+    [cumbria setHighlighted:NO];
+    [derbyshire setHighlighted:NO];
+    [devon setHighlighted:NO];    
+    [dorset setHighlighted:NO];
+    [durham setHighlighted:NO];
+    [eastSussex setHighlighted:NO];
+    [essex setHighlighted:NO];
+    [gloucestershire setHighlighted:NO];
+    [greaterLondon setHighlighted:NO];
+    [greaterManchester setHighlighted:NO];
+    [hampshire setHighlighted:NO];
+    [herefordshire setHighlighted:NO];
+    [hertfordshire setHighlighted:NO];
+    [isleOfWight setHighlighted:NO];
+    [kent setHighlighted:NO];
+    [lancashire setHighlighted:NO];
+    [leicestershire setHighlighted:NO];
+    [lincolnshire setHighlighted:NO];
+    [merseyside setHighlighted:NO];
+    [norfolk setHighlighted:NO];
+    
+    [northamptonshire setHighlighted:NO];
+    [northumberland setHighlighted:NO];
+    [northYorkshire setHighlighted:NO];
+    [nottinghamshire setHighlighted:NO];
+    [oxfordshire setHighlighted:NO];
+    [rutland setHighlighted:NO];
+    [shropshire setHighlighted:NO];
+    [somerset setHighlighted:NO];
+    [southYorkshire setHighlighted:NO];
+    [staffordshire setHighlighted:NO];
+    [suffolk setHighlighted:NO];
+    [surrey setHighlighted:NO];
+    [tyneAndWear setHighlighted:NO];
+    [warwickshire setHighlighted:NO];
+    [westMidlands setHighlighted:NO];
+    [westSussex setHighlighted:NO];
+    [westYorkshire setHighlighted:NO];
+    [wiltshire setHighlighted:NO];
+    [worcestershire setHighlighted:NO];
+    [eastRiding setHighlighted:NO];
+    
+    //[northamptonshire setHighlighted:YES];   
+    
+    [[currentCountyArray objectAtIndex:0] setHighlighted:YES];    
     
 }
 
@@ -237,19 +280,60 @@
     
     [currentCountyArray replaceObjectAtIndex:0 withObject:[allCountiesArray objectAtIndex:countyToGuessNumber]];
     
-    //NSLog(@"name>>> %@",[currentCounty objectAtIndex:0]);
+    NSLog(@"name>>> %@",[currentCountyArray objectAtIndex:0]);
     
     
     /// ********************************************************
     //USE ARRAY
     
-    /*
-    [Devon setHighlighted:NO];
-    [Cornwall setHighlighted:NO];
-    [Yorkshire setHighlighted:NO];
-    [London setHighlighted:NO];
-    [Lancashire setHighlighted:NO];
-    */
+    
+    [bedfordshire setHighlighted:NO];
+    [berkshire setHighlighted:NO];
+    [buckinghamshire setHighlighted:NO];
+    [cheshire setHighlighted:NO];
+    [cumbria setHighlighted:NO];
+    [derbyshire setHighlighted:NO];
+    [devon setHighlighted:NO];    
+    [dorset setHighlighted:NO];
+    [durham setHighlighted:NO];
+    [eastSussex setHighlighted:NO];
+    [essex setHighlighted:NO];
+    [gloucestershire setHighlighted:NO];
+    [greaterLondon setHighlighted:NO];
+    [greaterManchester setHighlighted:NO];
+    [hampshire setHighlighted:NO];
+    [herefordshire setHighlighted:NO];
+    [hertfordshire setHighlighted:NO];
+    [isleOfWight setHighlighted:NO];
+    [kent setHighlighted:NO];
+    [lancashire setHighlighted:NO];
+    [leicestershire setHighlighted:NO];
+    [lincolnshire setHighlighted:NO];
+    [merseyside setHighlighted:NO];
+    [norfolk setHighlighted:NO];
+    
+    [northamptonshire setHighlighted:NO];
+    [northumberland setHighlighted:NO];
+    [northYorkshire setHighlighted:NO];
+    [nottinghamshire setHighlighted:NO];
+    [oxfordshire setHighlighted:NO];
+    [rutland setHighlighted:NO];
+    [shropshire setHighlighted:NO];
+    [somerset setHighlighted:NO];
+    [southYorkshire setHighlighted:NO];
+    [staffordshire setHighlighted:NO];
+    [suffolk setHighlighted:NO];
+    [surrey setHighlighted:NO];
+    [tyneAndWear setHighlighted:NO];
+    [warwickshire setHighlighted:NO];
+    [westMidlands setHighlighted:NO];
+    [westSussex setHighlighted:NO];
+    [westYorkshire setHighlighted:NO];
+    [wiltshire setHighlighted:NO];
+    [worcestershire setHighlighted:NO];
+    [eastRiding setHighlighted:NO];
+
+
     
     
     
@@ -266,6 +350,10 @@
     NSLog(@"Game screen loaded");
     
     [super viewDidLoad];
+    
+    //[cornwall setHighlighted:YES];
+    
+    
     
     self.countyNameArray = [NSArray arrayWithObjects:
                                @"Bedfordshire",
@@ -317,53 +405,53 @@
                                @"Yorkshire, East Riding", nil];
     
     self.allCountiesArray = [NSArray arrayWithObjects:
-                             @"bedfordshire",
-                             @"berkshire",
-                             @"bristol",
-                             @"buckinghamshire",
-                             @"cambridgeshire",
-                             @"cheshire",
-                             @"cornwall",
-                             @"cumbria",
-                             @"derbyshire",
-                             @"devon",
-                             @"dorset",
-                             @"durham",
-                             @"eastSussex",
-                             @"essex",
-                             @"gloucestershire",
-                             @"greaterLondon",
-                             @"greaterManchester",
-                             @"hampshire",
-                             @"herefordshire",
-                             @"hertfordshire",
-                             @"isleOfWight",
-                             @"kent",
-                             @"lancashire",
-                             @"leicestershire",
-                             @"lincolnshire",
-                             @"merseyside",
-                             @"norfolk",
-                             @"northamptonshire",
-                             @"northumberland",
-                             @"north Yorkshire",
-                             @"nottinghamshire",
-                             @"oxfordshire",
-                             @"rutland",
-                             @"shropshire",
-                             @"somerset",
-                             @"southYorkshire",
-                             @"staffordshire",
-                             @"suffolk",
-                             @"surrey",
-                             @"tyneAndWear",
-                             @"warwickshire",
-                             @"westWidlands",
-                             @"westSussex",
-                             @"westYorkshire",
-                             @"wiltshire",
-                             @"worcestershire",
-                             @"eastRiding", nil];
+                             bedfordshire,
+                             berkshire,
+                             bristol,
+                             buckinghamshire,
+                             cambridgeshire,
+                             cheshire,
+                             cornwall,
+                             cumbria,
+                             derbyshire,
+                             devon,
+                             dorset,
+                             durham,
+                             eastSussex,
+                             essex,
+                             gloucestershire,
+                             greaterLondon,
+                             greaterManchester,
+                             hampshire,
+                             herefordshire,
+                             hertfordshire,
+                             isleOfWight,
+                             kent,
+                             lancashire,
+                             leicestershire,
+                             lincolnshire,
+                             merseyside,
+                             norfolk,
+                             northamptonshire,
+                             northumberland,
+                             northYorkshire,
+                             nottinghamshire,
+                             oxfordshire,
+                             rutland,
+                             shropshire,
+                             somerset,
+                             southYorkshire,
+                             staffordshire,
+                             suffolk,
+                             surrey,
+                             tyneAndWear,
+                             warwickshire,
+                             westMidlands,
+                             westSussex,
+                             westYorkshire,
+                             wiltshire,
+                             worcestershire,
+                             eastRiding, nil];
 
     self.imageNameArray = [NSArray arrayWithObjects:
                            @"bedfordshire",
@@ -511,7 +599,7 @@
     [self setIsleOfWight:nil];
     [self setWiltshire:nil];
     [self setBerkshire:nil];
-    [self setSurry:nil];
+    [self setSurrey:nil];
     [self setGreaterLondon:nil];
     [self setEssex:nil];
     [self setHertfordshire:nil];

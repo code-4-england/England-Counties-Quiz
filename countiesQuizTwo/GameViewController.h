@@ -94,7 +94,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *isleOfWight;
 @property (strong, nonatomic) IBOutlet UIImageView *wiltshire;
 @property (strong, nonatomic) IBOutlet UIImageView *berkshire;
-@property (strong, nonatomic) IBOutlet UIImageView *surry;
+@property (strong, nonatomic) IBOutlet UIImageView *surrey;
 @property (strong, nonatomic) IBOutlet UIImageView *greaterLondon;
 @property (strong, nonatomic) IBOutlet UIImageView *essex;
 @property (strong, nonatomic) IBOutlet UIImageView *hertfordshire;

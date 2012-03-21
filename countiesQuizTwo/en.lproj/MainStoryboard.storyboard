@@ -366,7 +366,7 @@
                         <outlet property="southYorkshire" destination="Jlm-mI-ERo" id="rzn-Rv-Zgw"/>
                         <outlet property="staffordshire" destination="QKf-V9-POy" id="rED-Bg-ppm"/>
                         <outlet property="suffolk" destination="yoS-Lm-kxj" id="dAj-cw-46F"/>
-                        <outlet property="surry" destination="y4J-R9-JfX" id="TC3-QB-BAM"/>
+                        <outlet property="surrey" destination="y4J-R9-JfX" id="KIO-c7-gRR"/>
                         <outlet property="totalQuestionsText" destination="Fam-bc-xQR" id="1NZ-Ho-AQv"/>
                         <outlet property="tyneAndWear" destination="WAt-wK-zNK" id="VUA-IV-qRF"/>
                         <outlet property="warwickshire" destination="2ds-dN-Nbw" id="ZNk-A4-EAA"/>
@@ -694,7 +694,7 @@
                 <relationship kind="outlet" name="southYorkshire" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="staffordshire" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="suffolk" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="surry" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="surrey" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="totalQuestionsText" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="tyneAndWear" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="warwickshire" candidateClass="UIImageView"/>
