@@ -72,15 +72,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="What is the name of the name of the County in red?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="MWo-ld-Lcd">
-                                <rect key="frame" x="20" y="25" width="239" height="62"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="What is the name of the County in red?" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="MWo-ld-Lcd">
+                                <rect key="frame" x="18" y="137" width="86" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B5R-KM-8qm">
-                                <rect key="frame" x="77" y="67" width="170" height="27"/>
+                                <rect key="frame" x="73" y="414" width="170" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Select Answer">
@@ -95,84 +95,224 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="sw1-5G-iKJ">
-                                <rect key="frame" x="20" y="106" width="55" height="21"/>
+                                <rect key="frame" x="20" y="273" width="55" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="xx" minimumFontSize="17" id="L0j-dq-oyc">
-                                <rect key="frame" x="75" y="101" width="15" height="31"/>
+                                <rect key="frame" x="74" y="268" width="15" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="xx" minimumFontSize="17" id="QIh-oC-u6j">
-                                <rect key="frame" x="22" y="130" width="16" height="31"/>
+                                <rect key="frame" x="23" y="296" width="16" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="/" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ftX-xz-WP1">
-                                <rect key="frame" x="39" y="135" width="11" height="21"/>
+                                <rect key="frame" x="40" y="301" width="11" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="xx" minimumFontSize="17" id="Fam-bc-xQR">
-                                <rect key="frame" x="46" y="130" width="21" height="31"/>
+                                <rect key="frame" x="47" y="296" width="21" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view hidden="YES" contentMode="scaleToFill" id="Wye-Zv-ecG">
-                                <rect key="frame" x="0.0" y="442" width="320" height="460"/>
+                                <rect key="frame" x="-1" y="411" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="cornwall.png" highlightedImage="cornwall_red.png" id="YIG-nz-P5E">
-                                <rect key="frame" x="11" y="374" width="72" height="66"/>
+                                <rect key="frame" x="7" y="350" width="72" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="devon.png" highlightedImage="devon_red.png" id="54Z-IB-X9d">
-                                <rect key="frame" x="42" y="351" width="113" height="82"/>
+                                <rect key="frame" x="38" y="327" width="113" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="dorset.png" highlightedImage="dorset_red.png" id="K8a-Y1-AFV">
-                                <rect key="frame" x="122" y="357" width="67" height="58"/>
+                                <rect key="frame" x="118" y="333" width="67" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="somerset.png" highlightedImage="somerset_red.png" id="4v7-c0-OW6">
-                                <rect key="frame" x="80" y="327" width="92" height="74"/>
+                                <rect key="frame" x="76" y="303" width="92" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="hampshire.png" highlightedImage="hampshire_red.png" id="fFm-kL-G4s">
-                                <rect key="frame" x="146" y="331" width="98" height="84"/>
+                                <rect key="frame" x="142" y="307" width="98" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="west_sussex.png" highlightedImage="west_sussex_red.png" id="H5j-vT-9s8">
-                                <rect key="frame" x="209" y="353" width="46" height="51"/>
+                                <rect key="frame" x="205" y="329" width="46" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="east_sussex.png" highlightedImage="east_sussex_red.png" id="HN1-nA-slV">
-                                <rect key="frame" x="226" y="350" width="73" height="56"/>
+                                <rect key="frame" x="222" y="326" width="73" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="kent.png" highlightedImage="kent_red.png" id="a6F-hJ-XZN">
-                                <rect key="frame" x="248" y="340" width="63" height="41"/>
+                                <rect key="frame" x="244" y="316" width="63" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="isle_of_wight.png" highlightedImage="isle_of_wight_red.png" id="Z8X-vp-o8o">
-                                <rect key="frame" x="175" y="383" width="45" height="31"/>
+                                <rect key="frame" x="171" y="359" width="45" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="wiltshire.png" highlightedImage="wiltshire_red.png" id="hap-V6-MIK">
-                                <rect key="frame" x="139" y="315" width="62" height="81"/>
+                                <rect key="frame" x="135" y="291" width="62" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="center" image="berkshire.png" highlightedImage="berkshire_red.png" id="fRw-2h-MIc">
-                                <rect key="frame" x="177" y="331" width="60" height="31"/>
+                                <rect key="frame" x="173" y="307" width="60" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="surrey.png" highlightedImage="surrey_red.png" id="y4J-R9-JfX">
+                                <rect key="frame" x="200" y="307" width="59" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="greater_london.png" highlightedImage="greater_london_red.png" id="FrA-JQ-aCP">
+                                <rect key="frame" x="215" y="298" width="51" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="essex.png" id="Bbe-s3-nkh">
+                                <rect key="frame" x="235" y="273" width="68" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="hertfordshire.png" id="9c0-pq-1zT">
+                                <rect key="frame" x="206" y="276" width="56" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="buckinghamshire.png" highlightedImage="buckinghamshire_red.png" id="AgP-M3-yNa">
+                                <rect key="frame" x="193" y="259" width="40" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="oxfordshire.png" highlightedImage="oxfordshire_red.png" id="qX1-QK-gvt">
+                                <rect key="frame" x="170" y="273" width="47" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="gloucestershire.png" highlightedImage="gloucestershire_red.png" id="iwS-cb-Qnt">
+                                <rect key="frame" x="128" y="271" width="61" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="herefordshire.png" highlightedImage="herefordshire_red.png" id="63K-8W-ZiN">
+                                <rect key="frame" x="108" y="250" width="56" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="worcestershire.png" highlightedImage="warwickshire_red.png" id="y83-7S-Pve">
+                                <rect key="frame" x="129" y="246" width="55" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="warwickshire.png" highlightedImage="warwickshire_red.png" id="2ds-dN-Nbw">
+                                <rect key="frame" x="156" y="235" width="51" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="bedfordshire.png" highlightedImage="bedfordshire_red.png" id="FW0-X3-9Jn">
+                                <rect key="frame" x="199" y="242" width="56" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="cambridgeshire.png" highlightedImage="cambridgeshire_red.png" id="GJH-wF-NaA">
+                                <rect key="frame" x="212" y="232" width="66" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="suffolk.png" highlightedImage="suffolk_red.png" id="yoS-Lm-kxj">
+                                <rect key="frame" x="253" y="240" width="63" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="norfolk.png" highlightedImage="norfolk_red.png" id="6qP-Xs-JHs">
+                                <rect key="frame" x="243" y="204" width="76" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="lincolnshire.png" highlightedImage="lincolnshire_red.png" id="Khy-eq-rJk">
+                                <rect key="frame" x="204" y="167" width="54" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="leicestershire.png" highlightedImage="leicestershire_red.png" id="gnZ-Pn-fgO">
+                                <rect key="frame" x="172" y="217" width="53" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="west_midlands.png" highlightedImage="west_midlands_red.png" id="JzE-rv-LtS">
+                                <rect key="frame" x="147" y="232" width="51" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="staffordshire.png" highlightedImage="staffordshire_red.png" id="QKf-V9-POy">
+                                <rect key="frame" x="141" y="196" width="46" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="derbyshire.png" highlightedImage="derbyshire_red.png" id="kfk-gz-bka">
+                                <rect key="frame" x="158" y="184" width="44" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="nottinghamshire.png" highlightedImage="nottinghamshire_red.png" id="kEI-wz-RUE">
+                                <rect key="frame" x="182" y="186" width="41" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="shropshire.png" highlightedImage="shropshire_red.png" id="ba5-Pd-3Z9">
+                                <rect key="frame" x="103" y="223" width="68" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="cheshire.png" highlightedImage="cheshire_red.png" id="BwS-Eh-WRp">
+                                <rect key="frame" x="115" y="187" width="59" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="south_yorkshire.png" highlightedImage="south_yorkshire_red.png" id="Jlm-mI-ERo">
+                                <rect key="frame" x="158" y="171" width="64" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="east_riding_of_yorkshire.png" highlightedImage="east_riding_of_yorkshire_red.png" id="MMw-mz-DSY">
+                                <rect key="frame" x="163" y="130" width="122" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="north_yorkshire.png" highlightedImage="north_yorkshire_red.png" id="sK4-97-2Wx">
+                                <rect key="frame" x="146" y="106" width="89" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="west_yorkshire.png" highlightedImage="west_yorkshire_red.png" id="UWr-G6-J8z">
+                                <rect key="frame" x="151" y="156" width="54" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="lancashire.png" highlightedImage="lancashire_red.png" id="jCc-vL-Pnc">
+                                <rect key="frame" x="108" y="142" width="83" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="greater_manchester.png" highlightedImage="greater_manchester_red.png" id="xfq-Vq-ItG">
+                                <rect key="frame" x="129" y="175" width="50" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="merseyside.png" highlightedImage="merseyside_red.png" id="S53-5H-vbo">
+                                <rect key="frame" x="107" y="178" width="47" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="northamptonshire.png" highlightedImage="northamptonshire_red.png" id="5Jp-V1-Weq">
+                                <rect key="frame" x="169" y="244" width="83" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="rutland.png" highlightedImage="rutland_red.png" id="DyO-Vc-ElN">
+                                <rect key="frame" x="204" y="230" width="27" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="cumbria.png" highlightedImage="cumbria_red.png" id="oxs-yX-dlP">
+                                <rect key="frame" x="99" y="81" width="77" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="durham.png" highlightedImage="durham_red.png" id="wDy-1T-17T">
+                                <rect key="frame" x="143" y="73" width="70" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="northumberland.png" highlightedImage="northumberland_red.png" id="Y7y-6D-SUl">
+                                <rect key="frame" x="135" y="43" width="66" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" image="tyne_and_wear.png" highlightedImage="tyne_and_wear_red.png" id="WAt-wK-zNK">
+                                <rect key="frame" x="165" y="81" width="40" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -358,28 +498,95 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bedfordshire.png" width="30" height="40"/>
+        <image name="bedfordshire_red.png" width="30" height="40"/>
         <image name="berkshire.png" width="50" height="20"/>
         <image name="berkshire_red.png" width="50" height="20"/>
+        <image name="buckinghamshire.png" width="35" height="55"/>
+        <image name="buckinghamshire_red.png" width="35" height="55"/>
+        <image name="cambridgeshire.png" width="50" height="55"/>
+        <image name="cambridgeshire_red.png" width="50" height="55"/>
+        <image name="cheshire.png" width="50" height="40"/>
+        <image name="cheshire_red.png" width="50" height="40"/>
         <image name="cornwall.png" width="75" height="75"/>
         <image name="cornwall_red.png" width="75" height="75"/>
+        <image name="cumbria.png" width="65" height="75"/>
+        <image name="cumbria_red.png" width="65" height="75"/>
+        <image name="derbyshire.png" width="40" height="65"/>
+        <image name="derbyshire_red.png" width="40" height="65"/>
         <image name="devon.png" width="75" height="70"/>
         <image name="devon_red.png" width="75" height="70"/>
         <image name="dorset.png" width="60" height="40"/>
         <image name="dorset_red.png" width="60" height="40"/>
+        <image name="durham.png" width="50" height="35"/>
+        <image name="durham_red.png" width="50" height="35"/>
+        <image name="east_riding_of_yorkshire.png" width="50" height="44"/>
+        <image name="east_riding_of_yorkshire_red.png" width="50" height="44"/>
         <image name="east_sussex.png" width="47" height="30"/>
         <image name="east_sussex_red.png" width="47" height="30"/>
+        <image name="essex.png" width="60" height="50"/>
+        <image name="gloucestershire.png" width="45" height="50"/>
+        <image name="gloucestershire_red.png" width="45" height="50"/>
+        <image name="greater_london.png" width="40" height="30"/>
+        <image name="greater_london_red.png" width="40" height="30"/>
+        <image name="greater_manchester.png" width="40" height="30"/>
+        <image name="greater_manchester_red.png" width="40" height="30"/>
         <image name="hampshire.png" width="55" height="55"/>
         <image name="hampshire_red.png" width="55" height="55"/>
+        <image name="herefordshire.png" width="40" height="45"/>
+        <image name="herefordshire_red.png" width="40" height="45"/>
+        <image name="hertfordshire.png" width="40" height="40"/>
         <image name="isle_of_wight.png" width="25" height="27"/>
         <image name="isle_of_wight_red.png" width="25" height="27"/>
         <image name="kent.png" width="60" height="40"/>
         <image name="kent_red.png" width="60" height="40"/>
+        <image name="lancashire.png" width="45" height="50"/>
+        <image name="lancashire_red.png" width="45" height="50"/>
+        <image name="leicestershire.png" width="45" height="45"/>
+        <image name="leicestershire_red.png" width="45" height="45"/>
+        <image name="lincolnshire.png" width="55" height="75"/>
+        <image name="lincolnshire_red.png" width="55" height="75"/>
+        <image name="merseyside.png" width="30" height="25"/>
+        <image name="merseyside_red.png" width="30" height="25"/>
+        <image name="norfolk.png" width="70" height="50"/>
+        <image name="norfolk_red.png" width="70" height="50"/>
+        <image name="north_yorkshire.png" width="95" height="75"/>
+        <image name="north_yorkshire_red.png" width="95" height="75"/>
+        <image name="northamptonshire.png" width="45" height="45"/>
+        <image name="northamptonshire_red.png" width="45" height="45"/>
+        <image name="northumberland.png" width="55" height="75"/>
+        <image name="northumberland_red.png" width="55" height="75"/>
+        <image name="nottinghamshire.png" width="35" height="45"/>
+        <image name="nottinghamshire_red.png" width="35" height="45"/>
+        <image name="oxfordshire.png" width="40" height="50"/>
+        <image name="oxfordshire_red.png" width="40" height="50"/>
+        <image name="rutland.png" width="20" height="25"/>
+        <image name="rutland_red.png" width="20" height="25"/>
+        <image name="shropshire.png" width="45" height="55"/>
+        <image name="shropshire_red.png" width="45" height="55"/>
         <image name="somerset.png" width="70" height="50"/>
         <image name="somerset_red.png" width="70" height="50"/>
+        <image name="south_yorkshire.png" width="45" height="30"/>
+        <image name="south_yorkshire_red.png" width="45" height="30"/>
+        <image name="staffordshire.png" width="40" height="55"/>
+        <image name="staffordshire_red.png" width="40" height="55"/>
+        <image name="suffolk.png" width="60" height="45"/>
+        <image name="suffolk_red.png" width="60" height="45"/>
+        <image name="surrey.png" width="40" height="30"/>
+        <image name="surrey_red.png" width="40" height="30"/>
+        <image name="tyne_and_wear.png" width="25" height="25"/>
+        <image name="tyne_and_wear_red.png" width="25" height="25"/>
+        <image name="warwickshire.png" width="40" height="55"/>
+        <image name="warwickshire_red.png" width="40" height="55"/>
+        <image name="west_midlands.png" width="35" height="25"/>
+        <image name="west_midlands_red.png" width="35" height="25"/>
         <image name="west_sussex.png" width="45" height="35"/>
         <image name="west_sussex_red.png" width="45" height="35"/>
+        <image name="west_yorkshire.png" width="45" height="35"/>
+        <image name="west_yorkshire_red.png" width="45" height="35"/>
         <image name="wiltshire.png" width="44" height="55"/>
         <image name="wiltshire_red.png" width="44" height="55"/>
+        <image name="worcestershire.png" width="40" height="40"/>
     </resources>
     <classes>
         <class className="AnswerViewController" superclassName="UIViewController">
