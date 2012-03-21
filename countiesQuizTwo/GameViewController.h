@@ -21,7 +21,6 @@
 
 @property (strong, nonatomic) IBOutlet UIView *hideGame;
 
-
 @property (strong, nonatomic) IBOutlet UITextField *countiesTextField;
 
 @property (strong, nonatomic) IBOutlet UIImageView *Devon;
@@ -40,11 +39,11 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *totalQuestionsText;
 
-@property (strong, nonatomic) NSMutableArray *imageNameArray;
+@property (strong, nonatomic) NSArray *imageNameArray;
 
+@property (strong, nonatomic) NSArray *allCountiesArray;
 
-@property (strong, nonatomic) NSMutableArray *allCountiesArray;
-
+@property (strong, nonatomic) NSMutableArray *usedCountiesArray;
 
 @property (strong, nonatomic) NSMutableArray *currentCountyArray;
 

@@ -63,14 +63,17 @@
         
         NSLog(@"00000000000000%@",currentImage);
         
-        
         [[gameController.currentCountyArray objectAtIndex:0] setImage:[UIImage imageNamed:currentImage]];
-        
-        
         
     } else{
         
         resultTextField.text = @"wrong";
+        
+        NSString * currentImage = [NSString stringWithFormat:@"%@_grey.png", [gameController.imageNameArray objectAtIndex:gameController.countyToGuessNumber]];  
+        
+        NSLog(@"00000000000000%@",currentImage);
+        
+        [[gameController.currentCountyArray objectAtIndex:0] setImage:[UIImage imageNamed:currentImage]];
     }
     
     
@@ -89,7 +92,7 @@
         
         nextButton.hidden = YES;
         
-        resultTextField.hidden = YES;
+        resultTextField.hidden = NO;
         
         
         

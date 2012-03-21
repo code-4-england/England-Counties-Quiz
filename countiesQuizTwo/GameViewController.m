@@ -38,6 +38,8 @@
 
 @synthesize currentCountyArray;
 
+@synthesize usedCountiesArray;
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -66,7 +68,9 @@
     
     self.totalQuestions = 5;
     
-    self.currentTurn = 1;        
+    self.currentTurn = 1;  
+    
+    usedCountiesArray = [[NSMutableArray alloc] init];
     
     NSString * scoreString = [NSString stringWithFormat:@"%i", 0];
     
@@ -76,17 +80,44 @@
     
     self.questionNumberText.text = [NSString stringWithFormat:@"%i", self.currentTurn];
     
-    int randomCounty = arc4random() % 4;
+    NSNumber *randomCounty = [[NSNumber alloc] initWithInt:999999];
     
-    self.countyToGuessNumber = randomCounty;
+    randomCounty = [NSNumber numberWithInt:arc4random() % 5];
+        
+    NSLog(@">>>>>>random county: %@",randomCounty);
+        
+    //NSNumber *randomCountyTest = [[NSNumber alloc] initWithInt:randomCounty];
     
-    allCountiesArray = [[NSMutableArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
+    self.countyToGuessNumber = [randomCounty intValue];
     
-    imageNameArray = [[NSMutableArray alloc] initWithObjects:@"countyA",@"countyC",@"countyD",@"countyE",@"countyB", nil];
+    allCountiesArray = [[NSArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
+    
+    imageNameArray = [[NSArray alloc] initWithObjects:@"countyA",@"countyC",@"countyD",@"countyE",@"countyB", nil];
+    
+    [usedCountiesArray addObject:randomCounty]; 
+    
+    //NSNumber *usedCounty = [[NSNumber alloc] initWithInt:countyToGuessNumber];
+    
+    //[usedCountiesArray addObject:usedCounty];
     
 	currentCountyArray = [[NSMutableArray alloc] init];
     
-    [currentCountyArray addObject:[allCountiesArray objectAtIndex:randomCounty]];
+    [currentCountyArray addObject:[allCountiesArray objectAtIndex:countyToGuessNumber]];
+    
+    
+    [Devon setImage:[UIImage imageNamed:@"countyA.png"]];
+    [Cornwall setImage:[UIImage imageNamed:@"countyC.png"]];
+    [Yorkshire setImage:[UIImage imageNamed:@"countyD.png"]];
+    [London setImage:[UIImage imageNamed:@"countyE.png"]];
+    [Lancashire setImage:[UIImage imageNamed:@"countyB.png"]];
+
+    
+    [Devon setHighlighted:NO];
+    [Cornwall setHighlighted:NO];
+    [Yorkshire setHighlighted:NO];
+    [London setHighlighted:NO];
+    [Lancashire setHighlighted:NO];
+    
     
     [[currentCountyArray objectAtIndex:0] setHighlighted:YES];    
     
@@ -112,19 +143,39 @@
     
     [self.scoreText setText:scoreString]; 
     
-    int randomCounty = arc4random() % 4;
-
+    NSNumber *randomCounty = [[NSNumber alloc] initWithInt:999999];
+    
+    //NSNumber *numberToTest = [[NSNumber alloc] initWithInt:randomCounty];
+    
+    NSLog(@"used countries%@", [usedCountiesArray description]);
+    
+    do{
+    
+        randomCounty = [NSNumber numberWithInt:arc4random() % 5];
+        
+        NSLog(@">>>>>>random county: %@",randomCounty);
+        
+        if([usedCountiesArray containsObject:randomCounty]){
+            
+            NSLog(@"duplicate");
+            
+        }
+        
+        //NSNumber *randomCountyTest = [[NSNumber alloc] initWithInt:randomCounty];
+         
+    }  while([usedCountiesArray containsObject:randomCounty]);
+        
+    
+    [usedCountiesArray addObject:randomCounty];
+    
     self.currentTurn += 1;
     
     self.questionNumberText.text = [NSString stringWithFormat:@"%i", self.currentTurn];
     
-    self.countyToGuessNumber = randomCounty;
+    self.countyToGuessNumber = [randomCounty intValue];
     
-    allCountiesArray = [[NSMutableArray alloc] initWithObjects:Devon,Cornwall,Yorkshire,London,Lancashire, nil];
     
-	NSMutableArray *currentCounty = [[NSMutableArray alloc] init];
-    
-    [currentCounty addObject:[allCountiesArray objectAtIndex:randomCounty]];
+    [currentCountyArray replaceObjectAtIndex:0 withObject:[allCountiesArray objectAtIndex:countyToGuessNumber]];
     
     //NSLog(@"name>>> %@",[currentCounty objectAtIndex:0]);
     
@@ -134,7 +185,7 @@
     [London setHighlighted:NO];
     [Lancashire setHighlighted:NO];
     
-    [[currentCounty objectAtIndex:0] setHighlighted:YES];
+    [[currentCountyArray objectAtIndex:0] setHighlighted:YES];
     
 }
 

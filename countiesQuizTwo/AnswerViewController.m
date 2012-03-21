@@ -36,8 +36,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
    // NSLog(@"test test test>>>> %i", ((GameViewController *)self.presentingViewController).score);
+    self.countySelected = 0;
     
-
+    ((GameViewController *)self.presentingViewController).currentAnswer = 0;
+    
+     NSLog(@"county selected: 0");
     
 }
 
@@ -58,12 +61,66 @@
 }
 
 - (NSInteger)pickerView:(UIPickerView *)thePickerView numberOfRowsInComponent:(NSInteger)component { 
-	return 5; 
+	return 48; 
 }
 
 - (NSString *)pickerView:(UIPickerView *)thePickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component { 
     
-    NSArray * countiesArray = [NSArray arrayWithObjects:@"Devon",@"Cornwall",@"Yorkshire",@"London",@"Lancashire", nil];
+    //NSArray * countiesArray = [NSArray arrayWithObjects:@"Devon",@"Cornwall",@"Yorkshire",@"London",@"Lancashire", nil];
+    
+    //NOTE: I've missed out city of London - don't think this is really county.
+    
+    NSArray * countiesArray = [NSArray arrayWithObjects:
+    @"Avon",
+    @"Bedfordshire",
+    @"Berkshire",
+    @"City of Bristol",
+    @"Buckinghamshire",
+    @"Cambridgeshire",
+    @"Cheshire",
+    @"Cornwall",
+    @"Cumbria",
+    @"Derbyshire",
+    @"Devon",
+    @"Dorset",
+    @"Durham",
+    @"East Sussex",
+    @"Essex",
+    @"Gloucestershire",
+    @"Greater London",
+    @"Greater Manchester",
+    @"Hampshire",
+    @"Herefordshire",
+    @"Hertfordshire",
+    @"Isle of Wight",
+    @"Kent",
+    @"Lancashire",
+    @"Leicestershire",
+    @"Lincolnshire",
+    @"Merseyside",
+    @"Norfolk",
+    @"Northamptonshire",
+    @"Northumberland",
+    @"North Yorkshire",
+    @"Nottinghamshire",
+    @"Oxfordshire",
+    @"Rutland",
+    @"Shropshire",
+    @"Somerset",
+    @"South Yorkshire",
+    @"Staffordshire",
+    @"Suffolk",
+    @"Surrey",
+    @"Tyne and Wear",
+    @"Warwickshire",
+    @"West Midlands",
+    @"West Sussex",
+    @"West Yorkshire",
+    @"Wiltshire",
+    @"Worcestershire",
+    @"Yorkshire, East Riding", nil];
+                               
+    
     
 	return [countiesArray objectAtIndex:row]; 
 }
