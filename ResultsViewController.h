@@ -31,4 +31,9 @@
 
 - (IBAction)playAgain:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UITextField *correctAnswerField;
+
+@property (strong, nonatomic) IBOutlet UITextField *correctAnswerText;
+
+
 @end

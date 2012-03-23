@@ -7,17 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 @class AnswerViewController;
 @class ResultsViewController;
 
-@interface GameViewController : UIViewController
+@interface GameViewController : UIViewController <UIAlertViewDelegate>
 
 - (void)nextQuestion;
 
 - (void)gotoResults;
 
 - (void)replay;
+- (IBAction)restartGame:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIView *hideGame;
 

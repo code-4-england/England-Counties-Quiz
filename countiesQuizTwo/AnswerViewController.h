@@ -17,7 +17,10 @@
 
 - (IBAction)doneAnswering:(id)sender;
 
-
 - (void)closeAnswerView;
+
+- (IBAction)backToMap:(id)sender;
+
+
 
 @end

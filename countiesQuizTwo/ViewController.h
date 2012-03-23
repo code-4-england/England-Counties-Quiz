@@ -13,5 +13,9 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) NSString * isQuickGame;
+
+- (IBAction)playFullGame:(id)sender;
+- (IBAction)playQuickGame:(id)sender;
 
 @end

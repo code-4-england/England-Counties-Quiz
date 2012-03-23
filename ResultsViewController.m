@@ -13,6 +13,8 @@
 @end
 
 @implementation ResultsViewController
+@synthesize correctAnswerField;
+@synthesize correctAnswerText;
 @synthesize resultScoreTextField;
 @synthesize resultTotalQsTextField;
 @synthesize resultMessageField;
@@ -61,7 +63,12 @@
         
         NSString * currentImage = [NSString stringWithFormat:@"%@_green.png", [gameController.imageNameArray objectAtIndex:gameController.countyToGuessNumber]];  
         
-        NSLog(@"current image to replace %@",currentImage);
+        //NSLog(@"current image to replace %@",currentImage);
+        
+        
+        correctAnswerField.hidden = YES;
+        
+        correctAnswerText.hidden = YES;
         
         [[gameController.currentCountyArray objectAtIndex:0] setImage:[UIImage imageNamed:currentImage]];
         
@@ -71,7 +78,14 @@
         
         NSString * currentImage = [NSString stringWithFormat:@"%@_grey.png", [gameController.imageNameArray objectAtIndex:gameController.countyToGuessNumber]];  
         
-        NSLog(@"current image to replace %@",currentImage);
+        //NSLog(@"current image to replace %@",currentImage);
+        
+        correctAnswerField.hidden = NO;
+        
+        correctAnswerText.hidden = NO;
+        
+        correctAnswerField.text =
+        [gameController.countyNameArray objectAtIndex:gameController.countyToGuessNumber];
         
         [[gameController.currentCountyArray objectAtIndex:0] setImage:[UIImage imageNamed:currentImage]];
     }
@@ -87,7 +101,7 @@
         
         
         
-        NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxEnd of Game");
+        //NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxEnd of Game");
         endResultsView.hidden = NO;
         
         nextButton.hidden = YES;
@@ -131,6 +145,8 @@
     [self setResultTextField:nil];
     [self setEndResultsView:nil];
     [self setNextButton:nil];
+    [self setCorrectAnswerField:nil];
+    [self setCorrectAnswerText:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -168,7 +184,7 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    NSLog(@"prepare for seg");
+    //NSLog(@"prepare for seg");
     
     //AnswerViewController * answerController = ((AnswerViewController *)self.presentingViewController);
     
@@ -179,13 +195,9 @@
 
 -(void)viewWillDisappear:(BOOL)animated{
     
-    NSLog(@"Results view will disappear.");
-    
-   
+    //NSLog(@"Results view will disappear.");
     
     [super viewWillDisappear: animated];
-    
-   
     
 }
 

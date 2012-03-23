@@ -40,7 +40,7 @@
     
     ((GameViewController *)self.presentingViewController).currentAnswer = 0;
     
-     NSLog(@"county selected: 0");
+     //NSLog(@"county selected: 0");
     
 }
 
@@ -85,9 +85,9 @@
     
     ((GameViewController *)self.presentingViewController).currentAnswer = row;
     
-    NSLog(@"row selected:%i", row);
+    //NSLog(@"row selected:%i", row);
     
-    NSLog(@"county selected");
+    //NSLog(@"county selected");
     
 }
 
@@ -115,32 +115,26 @@
     
 }
 
+- (IBAction)backToMap:(id)sender {
+    
+    
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-    NSLog(@"prepare for seg");
+    //NSLog(@"prepare for seg");
     
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     
-   // NSLog(@"*************** %@",[[self delegate] description]);
-    
-/*    
-    
-    GameViewController *gameViewController = ((GameViewController *)self.presentingViewController);
-    
-    [gameViewController isAnswerCorrect];
-    
-     
-    
-  
- */
+
     
     [super viewWillDisappear: animated];
  
-      //NSLog(@">*>*>*>*>*>*>* %@", self.presentingViewController.description);
-    
+
     
 }
 
