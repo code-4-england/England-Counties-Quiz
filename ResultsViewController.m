@@ -57,6 +57,7 @@
      
     if(gameController.countyToGuessNumber == gameController.currentAnswer){
         
+        resultTextField.hidden = NO;
         resultTextField.text = @"correct";
         
         gameController.score += 1;
@@ -74,7 +75,13 @@
         
     } else{
         
+        if(gameController.currentAnswer >= 0){
+            resultTextField.hidden = NO;
         resultTextField.text = @"wrong";
+        }else{
+            resultTextField.hidden = YES;
+            
+        }
         
         NSString * currentImage = [NSString stringWithFormat:@"%@_grey.png", [gameController.imageNameArray objectAtIndex:gameController.countyToGuessNumber]];  
         
@@ -99,14 +106,12 @@
     if(gameController.currentTurn == gameController.totalQuestions){
         
         
-        
-        
         //NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxEnd of Game");
         endResultsView.hidden = NO;
         
         nextButton.hidden = YES;
         
-        resultTextField.hidden = NO;
+        resultTextField.hidden = YES;
         
         
         

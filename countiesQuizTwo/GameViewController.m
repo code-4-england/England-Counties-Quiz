@@ -429,12 +429,28 @@
     
    // NSLog(@"to Results");
     
+    NSLog(@"Current answer:%i", self.currentAnswer );
     
+
     AnswerViewController * answerController = ((AnswerViewController *)self.presentedViewController);
-       
-    
     [answerController performSegueWithIdentifier:@"toResults" sender:answerController];
     
+/*
+}else{
+        NSLog(@"Don't Know Selected");
+        
+        
+        if(self.currentTurn == self.totalQuestions){
+            AnswerViewController * answerController = ((AnswerViewController *)self.presentedViewController);
+            [answerController performSegueWithIdentifier:@"toResults" sender:answerController];
+        }else {
+            [self nextQuestion];
+        }
+        
+        
+    }
+ 
+ */
     
 }
 

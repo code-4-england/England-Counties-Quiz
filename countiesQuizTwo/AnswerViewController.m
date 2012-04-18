@@ -36,9 +36,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
    // NSLog(@"test test test>>>> %i", ((GameViewController *)self.presentingViewController).score);
-    self.countySelected = 0;
+    self.countySelected = -1;
     
-    ((GameViewController *)self.presentingViewController).currentAnswer = 0;
+    ((GameViewController *)self.presentingViewController).currentAnswer = -1;
     
      //NSLog(@"county selected: 0");
     
@@ -61,7 +61,7 @@
 }
 
 - (NSInteger)pickerView:(UIPickerView *)thePickerView numberOfRowsInComponent:(NSInteger)component { 
-	return 47; 
+	return 48; 
 }
 
 - (NSString *)pickerView:(UIPickerView *)thePickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component { 
@@ -76,14 +76,26 @@
                                 
     NSArray *pickerArray = ((GameViewController *)self.presentingViewController).countyNameArray;
     
-	return [pickerArray objectAtIndex:row]; 
+	
+    if(row == 0){
+        
+        return @"Don't Know";
+        
+    }
+    
+    return [pickerArray objectAtIndex:row -1];
+    
+    
 }
 
 - (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component { 
     
     self.countySelected = row;
     
-    ((GameViewController *)self.presentingViewController).currentAnswer = row;
+    ((GameViewController *)self.presentingViewController).currentAnswer = row - 1;
+
+    //-1 is included to account for the first line 'don't know'
+    
     
     //NSLog(@"row selected:%i", row);
     
