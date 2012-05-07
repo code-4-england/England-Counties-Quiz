@@ -153,7 +153,7 @@
     
     self.questionNumberText.text = [NSString stringWithFormat:@"%i", self.currentTurn];
     
-    NSNumber *randomCounty = [[NSNumber alloc] initWithInt:999999];
+    NSNumber *randomCounty = [[NSNumber alloc] init];
     
     randomCounty = [NSNumber numberWithInt:arc4random() % self.totalCounties];
         
@@ -209,7 +209,7 @@
     
     [self.scoreText setText:scoreString]; 
     
-    NSNumber *randomCounty = [[NSNumber alloc] initWithInt:999999];
+    NSNumber *randomCounty = [[NSNumber alloc] init];
     
     //NSLog(@"used countries%@", [usedCountiesArray description]);
     
@@ -265,7 +265,7 @@
     self.countyNameArray = [NSArray arrayWithObjects:
                                @"Bedfordshire",
                                @"Berkshire",
-                               @"City of Bristol",
+                               @"Bristol",
                                @"Buckinghamshire",
                                @"Cambridgeshire",
                                @"Cheshire",
@@ -275,6 +275,7 @@
                                @"Devon",
                                @"Dorset",
                                @"Durham",
+                               @"East Riding of Yorkshire",
                                @"East Sussex",
                                @"Essex",
                                @"Gloucestershire",
@@ -308,8 +309,8 @@
                                @"West Sussex",
                                @"West Yorkshire",
                                @"Wiltshire",
-                               @"Worcestershire",
-                               @"Yorkshire, East Riding", nil];
+                               @"Worcestershire", nil];
+                               
     
     self.allCountiesArray = [NSArray arrayWithObjects:
                              bedfordshire,
@@ -324,6 +325,7 @@
                              devon,
                              dorset,
                              durham,
+                             eastRiding,
                              eastSussex,
                              essex,
                              gloucestershire,
@@ -357,8 +359,7 @@
                              westSussex,
                              westYorkshire,
                              wiltshire,
-                             worcestershire,
-                             eastRiding, nil];
+                             worcestershire,nil];
 
     self.imageNameArray = [NSArray arrayWithObjects:
                            @"bedfordshire",
@@ -373,6 +374,7 @@
                            @"devon",
                            @"dorset",
                            @"durham",
+                           @"east_riding_of_yorkshire",
                            @"east_sussex",
                            @"essex",
                            @"gloucestershire",
@@ -406,8 +408,7 @@
                            @"west_sussex",
                            @"west_yorkshire",
                            @"wiltshire",
-                           @"worcestershire",
-                           @"east_riding_of_yorkshire", nil];
+                           @"worcestershire", nil];
 
     
     [self resetGame];

@@ -114,7 +114,6 @@
         resultTextField.hidden = YES;
         
         
-        
         if(gameController.score == gameController.totalQuestions){
            
             self.resultMessageField.text = @"Well done! Perfect Score!";

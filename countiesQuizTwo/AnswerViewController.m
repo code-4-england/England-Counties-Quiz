@@ -64,14 +64,8 @@
 	return 48; 
 }
 
+/*
 - (NSString *)pickerView:(UIPickerView *)thePickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component { 
-    
-    //NSArray * countiesArray = [NSArray arrayWithObjects:@"Devon",@"Cornwall",@"Yorkshire",@"London",@"Lancashire", nil];
-    
-    //NOTE: I've missed out city of London - don't think this is really county.
-    
-    
-    // PUT IN Game Controller ************************************
     
                                 
     NSArray *pickerArray = ((GameViewController *)self.presentingViewController).countyNameArray;
@@ -87,6 +81,10 @@
     
     
 }
+ 
+*/
+
+
 
 - (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component { 
     
@@ -103,6 +101,46 @@
     
 }
 
+
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+    
+    UILabel* tView = (UILabel*)view;
+    
+    NSArray *pickerArray = ((GameViewController *)self.presentingViewController).countyNameArray;
+    
+    if ((tView == nil) || ([tView class] != [UILabel class]) ){
+        
+        CGRect frame = CGRectMake(20.0, 0.0, 200, 30.0);
+        
+        
+        tView = [[UILabel alloc] initWithFrame:frame];
+        
+        tView.font = [UIFont systemFontOfSize:16];
+        
+        
+        // Setup label properties - frame, font, colors etc
+        
+ 
+            
+    
+       
+    }
+    
+    if(row == 0){
+        
+        tView.text = @"Don't Know";
+        
+    } else{
+        
+        tView.text = [pickerArray objectAtIndex:row - 1];
+        
+    }
+    
+    
+    // Fill the label text here
+    
+    return tView;
+}
 
 
 - (IBAction)doneAnswering:(id)sender {
