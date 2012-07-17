@@ -18,6 +18,8 @@
 		220F857A1517816F007BAD0F /* countyE_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 220F85701517816F007BAD0F /* countyE_green.png */; };
 		220F857B1517816F007BAD0F /* countyE_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 220F85711517816F007BAD0F /* countyE_grey.png */; };
 		222E8926150FEAD8009BA167 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 222E8925150FEAD8009BA167 /* ResultsViewController.m */; };
+		223DC72E15B5DB7600C17ACB /* home_page_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 223DC72C15B5DB7600C17ACB /* home_page_background.png */; };
+		223DC72F15B5DB7600C17ACB /* home_page_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 223DC72D15B5DB7600C17ACB /* home_page_background@2x.png */; };
 		2288C1A1151A26F300DCB7E6 /* bedfordshire_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 2288C0E5151A26F300DCB7E6 /* bedfordshire_green.png */; };
 		2288C1A2151A26F300DCB7E6 /* bedfordshire_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 2288C0E6151A26F300DCB7E6 /* bedfordshire_grey.png */; };
 		2288C1A3151A26F300DCB7E6 /* bedfordshire_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 2288C0E7151A26F300DCB7E6 /* bedfordshire_red.png */; };
@@ -242,6 +244,8 @@
 		220F85711517816F007BAD0F /* countyE_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = countyE_grey.png; sourceTree = "<group>"; };
 		222E8924150FEAD8009BA167 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultsViewController.h; path = ../ResultsViewController.h; sourceTree = "<group>"; };
 		222E8925150FEAD8009BA167 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultsViewController.m; path = ../ResultsViewController.m; sourceTree = "<group>"; };
+		223DC72C15B5DB7600C17ACB /* home_page_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_page_background.png; sourceTree = "<group>"; };
+		223DC72D15B5DB7600C17ACB /* home_page_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_page_background@2x.png"; sourceTree = "<group>"; };
 		2288C0E5151A26F300DCB7E6 /* bedfordshire_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bedfordshire_green.png; sourceTree = "<group>"; };
 		2288C0E6151A26F300DCB7E6 /* bedfordshire_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bedfordshire_grey.png; sourceTree = "<group>"; };
 		2288C0E7151A26F300DCB7E6 /* bedfordshire_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bedfordshire_red.png; sourceTree = "<group>"; };
@@ -475,6 +479,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223DC72A15B5DB5F00C17ACB /* game_graphics */ = {
+			isa = PBXGroup;
+			children = (
+				223DC72C15B5DB7600C17ACB /* home_page_background.png */,
+				223DC72D15B5DB7600C17ACB /* home_page_background@2x.png */,
+			);
+			name = game_graphics;
+			sourceTree = "<group>";
+		};
 		2288C0E3151A26D200DCB7E6 /* counties1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -700,6 +713,7 @@
 		22B94B2B1502E2F900CDA704 /* countiesQuizTwo */ = {
 			isa = PBXGroup;
 			children = (
+				223DC72A15B5DB5F00C17ACB /* game_graphics */,
 				2288C0E3151A26D200DCB7E6 /* counties1 */,
 				222E8924150FEAD8009BA167 /* ResultsViewController.h */,
 				222E8925150FEAD8009BA167 /* ResultsViewController.m */,
@@ -1010,6 +1024,8 @@
 				2288C25A151A26F400DCB7E6 /* worcestershire_grey.png in Resources */,
 				2288C25B151A26F400DCB7E6 /* worcestershire_red.png in Resources */,
 				2288C25C151A26F400DCB7E6 /* worcestershire.png in Resources */,
+				223DC72E15B5DB7600C17ACB /* home_page_background.png in Resources */,
+				223DC72F15B5DB7600C17ACB /* home_page_background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
