@@ -21,6 +21,12 @@
 
 - (IBAction)backToMap:(id)sender;
 
+/*
+@property (nonatomic, retain) NSString *title;
+@property (nonatomic, retain) UIImage *image;
 
++ (CGFloat)viewWidth;
++ (CGFloat)viewHeight;
+*/
 
 @end
