@@ -127,7 +127,7 @@
     
     ViewController * initialViewController = ((ViewController *)self.presentingViewController);
     
-    if(initialViewController.isQuickGame == @"YES"){
+    if([initialViewController.isQuickGame isEqual: @"YES"]){
         
         self.totalQuestions = 10;
         
