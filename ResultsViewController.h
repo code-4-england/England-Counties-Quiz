@@ -21,9 +21,13 @@
 @property (strong, nonatomic) IBOutlet UITextField *resultMessageField;
 
 
-@property (strong, nonatomic) IBOutlet UILabel *resultTextField;
+//@property (strong, nonatomic) IBOutlet UILabel *resultTextField;
 
 @property (strong, nonatomic) IBOutlet UIView *endResultsView;
+
+@property (strong, nonatomic) IBOutlet UIImageView *resultsImage;
+
+@property (strong, nonatomic) IBOutlet UIImageView *rewardImage;
 
 @property (strong, nonatomic) IBOutlet UIButton *nextButton;
 

@@ -18,9 +18,11 @@
 @synthesize resultScoreTextField;
 @synthesize resultTotalQsTextField;
 @synthesize resultMessageField;
-@synthesize resultTextField;
+//@synthesize resultTextField;
 @synthesize endResultsView;
 @synthesize nextButton;
+@synthesize resultsImage;
+@synthesize rewardImage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -57,8 +59,8 @@
      
     if(gameController.countyToGuessNumber == gameController.currentAnswer){
         
-        resultTextField.hidden = NO;
-        resultTextField.text = @"correct";
+        //resultTextField.hidden = NO;
+        //resultTextField.text = @"correct";
         
         gameController.score += 1;
         
@@ -71,15 +73,24 @@
         
         correctAnswerText.hidden = YES;
         
+        resultsImage.hidden = NO;
+        [resultsImage setImage:[UIImage imageNamed:@"correct_title.png"]];
+        
         [[gameController.currentCountyArray objectAtIndex:0] setImage:[UIImage imageNamed:currentImage]];
         
     } else{
         
         if(gameController.currentAnswer >= 0){
-            resultTextField.hidden = NO;
-        resultTextField.text = @"wrong";
+            
+            resultsImage.hidden = NO;
+            [resultsImage setImage:[UIImage imageNamed:@"wrong_title.png"]];
+            
+            //resultTextField.hidden = NO;
+        //resultTextField.text = @"wrong";
         }else{
-            resultTextField.hidden = YES;
+            
+            resultsImage.hidden = YES;
+            //resultTextField.hidden = YES;
             
         }
         
@@ -111,21 +122,70 @@
         
         nextButton.hidden = YES;
         
-        resultTextField.hidden = YES;
+        //resultTextField.hidden = YES;
         
         
-        if(gameController.score == gameController.totalQuestions){
+        
+        if(gameController.totalQuestions == 10){
+        
+            if(gameController.score == gameController.totalQuestions){
            
-            self.resultMessageField.text = @"Well done! Perfect Score!";
+                self.resultMessageField.text = @"Perfect score! Congratulations!";
+        
+                
+                self.rewardImage.hidden = NO;
+                
+            }
+           
+            if(10 > gameController.score >= 7){
+            
+                self.resultMessageField.text = @"Great score. Almost there.";
+            
+                self.rewardImage.hidden = YES;
+            }
+            
+            if(gameController.score < 7){
+                
+                self.resultMessageField.text = @"";
+                
+                self.rewardImage.hidden = YES;
+                
+            }
+         
+            
             
         }
-           
-        if(gameController.score < gameController.totalQuestions){
+        
+        if(gameController.totalQuestions == 47){
             
-            self.resultMessageField.text = @"You didn't get all the answers this time.";
+            if(gameController.score == 47){
+                
+                self.resultMessageField.text = @"Perfect score! Congratulations!";
+                
+                self.rewardImage.hidden = NO;
+                
+            }
+            
+            
+            if(47 > gameController.score >= 32){
+                
+                self.resultMessageField.text = @"Great score. Almost there.";
+                
+                self.rewardImage.hidden = YES;
+                
+            }
+            
+            if(gameController.score < 32){
+                
+                self.resultMessageField.text = @"";
+                
+                self.rewardImage.hidden = YES;
+                
+            }
             
         }
-           
+        
+        
         
         
         self.resultScoreTextField.text = scoreString;
@@ -146,7 +206,7 @@
     [self setResultScoreTextField:nil];
     [self setResultTotalQsTextField:nil];
     [self setResultMessageField:nil];
-    [self setResultTextField:nil];
+    //[self setResultTextField:nil];
     [self setEndResultsView:nil];
     [self setNextButton:nil];
     [self setCorrectAnswerField:nil];
