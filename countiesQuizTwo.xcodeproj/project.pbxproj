@@ -414,6 +414,9 @@
 		22F2032516AEB1A5006D8B16 /* worcestershire_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F201AD16AEB1A5006D8B16 /* worcestershire_red.png */; };
 		22F2032616AEB1A5006D8B16 /* worcestershire_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F201AE16AEB1A5006D8B16 /* worcestershire_red@2x.png */; };
 		962DB4BF172FC310003CA1E8 /* uk_complete.png in Resources */ = {isa = PBXBuildFile; fileRef = 962DB4BE172FC310003CA1E8 /* uk_complete.png */; };
+		962DB4C1172FDD2D003CA1E8 /* selection_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 962DB4C0172FDD2D003CA1E8 /* selection_background.png */; };
+		962DB4C3172FE16B003CA1E8 /* selection_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 962DB4C2172FE16B003CA1E8 /* selection_title.png */; };
+		962DB4C5172FE1D3003CA1E8 /* selection_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 962DB4C4172FE1D3003CA1E8 /* selection_title@2x.png */; };
 		96856CDF172ED8D400FA6CE7 /* game_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 96856CDD172ED8D400FA6CE7 /* game_title.png */; };
 		96856CE0172ED8D400FA6CE7 /* game_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96856CDE172ED8D400FA6CE7 /* game_title@2x.png */; };
 /* End PBXBuildFile section */
@@ -1211,6 +1214,9 @@
 		22F201AD16AEB1A5006D8B16 /* worcestershire_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worcestershire_red.png; sourceTree = "<group>"; };
 		22F201AE16AEB1A5006D8B16 /* worcestershire_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "worcestershire_red@2x.png"; sourceTree = "<group>"; };
 		962DB4BE172FC310003CA1E8 /* uk_complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uk_complete.png; sourceTree = "<group>"; };
+		962DB4C0172FDD2D003CA1E8 /* selection_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selection_background.png; sourceTree = "<group>"; };
+		962DB4C2172FE16B003CA1E8 /* selection_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selection_title.png; sourceTree = "<group>"; };
+		962DB4C4172FE1D3003CA1E8 /* selection_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selection_title@2x.png"; sourceTree = "<group>"; };
 		96856CDD172ED8D400FA6CE7 /* game_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_title.png; sourceTree = "<group>"; };
 		96856CDE172ED8D400FA6CE7 /* game_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game_title@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1680,6 +1686,9 @@
 				22C48F6E1506700D00CC00F0 /* GameViewController.h */,
 				22C48F6F1506700D00CC00F0 /* GameViewController.m */,
 				22B94B371502E2F900CDA704 /* MainStoryboard.storyboard */,
+				962DB4C4172FE1D3003CA1E8 /* selection_title@2x.png */,
+				962DB4C2172FE16B003CA1E8 /* selection_title.png */,
+				962DB4C0172FDD2D003CA1E8 /* selection_background.png */,
 				2292643C151CC7AC007DB690 /* InfoViewController.h */,
 				2292643D151CC7AC007DB690 /* InfoViewController.m */,
 				22B94B3A1502E2F900CDA704 /* ViewController.h */,
@@ -2534,6 +2543,9 @@
 				96856CDF172ED8D400FA6CE7 /* game_title.png in Resources */,
 				96856CE0172ED8D400FA6CE7 /* game_title@2x.png in Resources */,
 				962DB4BF172FC310003CA1E8 /* uk_complete.png in Resources */,
+				962DB4C1172FDD2D003CA1E8 /* selection_background.png in Resources */,
+				962DB4C3172FE16B003CA1E8 /* selection_title.png in Resources */,
+				962DB4C5172FE1D3003CA1E8 /* selection_title@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
