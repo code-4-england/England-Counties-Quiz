@@ -108,15 +108,15 @@
                                     <segue destination="0gH-gF-GQD" kind="modal" identifier="toAnswerPicker" modalTransitionStyle="crossDissolve" id="qa8-XQ-FkN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SCORE " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="sw1-5G-iKJ">
-                                <rect key="frame" x="256" y="0.0" width="74" height="38"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SCORE " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="sw1-5G-iKJ" userLabel="Label - SCORE">
+                                <rect key="frame" x="252" y="-1" width="74" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
                                 <color key="textColor" red="0.50980392156862742" green="0.62352941176470589" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="88" textAlignment="center" minimumFontSize="17" id="L0j-dq-oyc">
-                                <rect key="frame" x="244" y="29" width="67" height="45"/>
+                                <rect key="frame" x="246" y="28" width="67" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.77647058820000003" green="0.84705882349999995" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -124,33 +124,37 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="County " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" id="6TL-CQ-PDN">
-                                <rect key="frame" x="253" y="73" width="69" height="21"/>
+                                <rect key="frame" x="253" y="71" width="69" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
                                 <color key="textColor" red="0.50980392159999999" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="88" textAlignment="right" minimumFontSize="17" id="QIh-oC-u6j">
-                                <rect key="frame" x="253" y="87" width="18" height="28"/>
+                                <rect key="frame" x="253" y="86" width="18" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.50980392159999999" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="of" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ftX-xz-WP1">
-                                <rect key="frame" x="272" y="87" width="19" height="28"/>
+                                <rect key="frame" x="273" y="86" width="19" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                 <color key="textColor" red="0.50980392159999999" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="88" minimumFontSize="17" id="Fam-bc-xQR">
-                                <rect key="frame" x="289" y="86" width="18" height="30"/>
+                                <rect key="frame" x="290" y="85" width="18" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.50980392159999999" green="0.62352941179999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="uk_complete.png" id="nii-nr-5jd">
+                                <rect key="frame" x="-297" y="-341" width="704" height="733"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="nottinghamshire.png" highlightedImage="nottinghamshire_red.png" id="kEI-wz-RUE">
                                 <rect key="frame" x="188" y="129" width="36" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -424,7 +428,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHs-n4-Wiz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="590" y="-227"/>
+            <point key="canvasLocation" x="584" y="-221"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="KDL-vN-ndM">
@@ -768,6 +772,7 @@ The county map used in the game is based on an image by Nilfanion [CC-BY-SA-3.0 
         <image name="surrey_red.png" width="45" height="32"/>
         <image name="tyne_and_wear.png" width="30" height="30"/>
         <image name="tyne_and_wear_red.png" width="30" height="30"/>
+        <image name="uk_complete.png" width="926" height="1100"/>
         <image name="warwickshire.png" width="40" height="59"/>
         <image name="warwickshire_red.png" width="40" height="59"/>
         <image name="west_midlands.png" width="38" height="28"/>

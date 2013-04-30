@@ -413,6 +413,7 @@
 		22F2032416AEB1A5006D8B16 /* worcestershire_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F201AC16AEB1A5006D8B16 /* worcestershire_grey@2x.png */; };
 		22F2032516AEB1A5006D8B16 /* worcestershire_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F201AD16AEB1A5006D8B16 /* worcestershire_red.png */; };
 		22F2032616AEB1A5006D8B16 /* worcestershire_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22F201AE16AEB1A5006D8B16 /* worcestershire_red@2x.png */; };
+		962DB4BF172FC310003CA1E8 /* uk_complete.png in Resources */ = {isa = PBXBuildFile; fileRef = 962DB4BE172FC310003CA1E8 /* uk_complete.png */; };
 		96856CDF172ED8D400FA6CE7 /* game_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 96856CDD172ED8D400FA6CE7 /* game_title.png */; };
 		96856CE0172ED8D400FA6CE7 /* game_title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96856CDE172ED8D400FA6CE7 /* game_title@2x.png */; };
 /* End PBXBuildFile section */
@@ -1209,6 +1210,7 @@
 		22F201AC16AEB1A5006D8B16 /* worcestershire_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "worcestershire_grey@2x.png"; sourceTree = "<group>"; };
 		22F201AD16AEB1A5006D8B16 /* worcestershire_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worcestershire_red.png; sourceTree = "<group>"; };
 		22F201AE16AEB1A5006D8B16 /* worcestershire_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "worcestershire_red@2x.png"; sourceTree = "<group>"; };
+		962DB4BE172FC310003CA1E8 /* uk_complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uk_complete.png; sourceTree = "<group>"; };
 		96856CDD172ED8D400FA6CE7 /* game_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_title.png; sourceTree = "<group>"; };
 		96856CDE172ED8D400FA6CE7 /* game_title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game_title@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1641,6 +1643,7 @@
 		22B94B161502E2F800CDA704 = {
 			isa = PBXGroup;
 			children = (
+				962DB4BE172FC310003CA1E8 /* uk_complete.png */,
 				22F1A4F716482BC40051B415 /* Default-568h@2x.png */,
 				22B94B2B1502E2F900CDA704 /* countiesQuizTwo */,
 				22B94B241502E2F900CDA704 /* Frameworks */,
@@ -2530,6 +2533,7 @@
 				223CF6EF16B5639C003FBE84 /* restart@2x.png in Resources */,
 				96856CDF172ED8D400FA6CE7 /* game_title.png in Resources */,
 				96856CE0172ED8D400FA6CE7 /* game_title@2x.png in Resources */,
+				962DB4BF172FC310003CA1E8 /* uk_complete.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
