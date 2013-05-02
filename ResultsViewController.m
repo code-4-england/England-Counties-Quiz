@@ -12,7 +12,7 @@
 
 @end
 
-@implementation ResultsViewController
+@implementation ResultsViewController;
 @synthesize correctAnswerField;
 @synthesize correctAnswerText;
 @synthesize resultScoreTextField;

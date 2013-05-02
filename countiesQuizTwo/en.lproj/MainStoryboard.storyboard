@@ -586,23 +586,121 @@
                                     <action selector="closeInfoView:" destination="wHy-xD-klB" eventType="touchUpInside" id="iGp-1b-ju7"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="uB9-Xr-Oet">
-                                <rect key="frame" x="19" y="87" width="283" height="299"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Over the years the counties of England have been changed and redrawn many times. There are currently two main definitions of a county – administrative and ceremonial. There are 83 administrative counties and 48 ceremonial counties. The administrative counties do not include Greater London or the Isles of Scilly and are divided between metropolitan and non-metropolitan counties. Ceremonial counties are legally defined by the Lieutenancies Act 1997, they are also known as geographic counties. This game uses the ceremonial counties and not the administrative counties.
-The Royal Mail defined 48 postal counties but since 1996 these are no longer used. The postal counties did not match with the actual county boundaries. The use of postcodes has made postal counties unnecessary. 
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" id="uB9-Xr-Oet">
+                                <rect key="frame" x="20" y="99" width="281" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">For the English, the county where you were born or where you live is often an important part of your identity. Counties can define your accent, the sports team you support and sometimes the food you eat. But few people can place m</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.89285879846691829" green="0.921135703729137" blue="0.95575573979591832" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.21356823979591832" green="0.21133499004324791" blue="0.20650592896707531" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                            <font key="NSOriginalFont" size="15" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="415" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">ore than a handful of counties on a map. There are a confusing number of definitions of county boundaries. Are counties defined by the Post Office, the government or by tradition?
 
-The game does not include the City of London as it would appear too small to see on the map. 
-For more information on the Counties of England have look at the following Wikipedia pages:
+England's county boundaries have been redrawn many times over the years.  There are currently 3 main definitions - administrative, ceremonial and postal. The postal county definitions are often the best know as they form part of your address but the Royal Mail has now stopped using them in favour of postcodes.        
 
-http://en.wikipedia.org/wiki/Counties_of_England
-http://en.wikipedia.org/wiki/Ceremonial_counties_of_England
-http://en.wikipedia.org/wiki/List_of_counties_of_the_United_Kingdom#England
+There are 83 administrative counties, these used to define areas for local government. They are divided between metropolitan (towns and cities) and non-metropolitan counties and can be subdivided into districts. 
 
-The county map used in the game is based on an image by Nilfanion [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)], via Wikimedia Commons
+This game is based on the ceremonial counties. These are also know as geographic counties and were defined by the Lieutenancies Act of 1997. There are 48 ceremonial counties - this game includes all of them except for the City of London, as this would be too small to be easily visible on the game map.
+
+There is also a movement to return to a more tradition definition of counties run by the Association of British Counties. They argue for county boundaries to be based on more historical lines.
+
+For more detailed information about counties have a look at these Wikipedia pages:
+ 
 </string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <attributes>
+                                            <color key="NSColor" red="0.21356823979591832" green="0.21133499004324791" blue="0.20650592896707531" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="415" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="http://en.wikipedia.org/wiki/Counties_of_England ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.21356823979591832" green="0.21133499004324791" blue="0.20650592896707531" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="415" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.21356823979591832" green="0.21133499004324791" blue="0.20650592896707531" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="415" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="http://en.wikipedia.org/wiki/Ceremonial_counties_of_England">
+                                        <attributes>
+                                            <color key="NSColor" red="0.21356823979591832" green="0.21133499004324791" blue="0.20650592896707531" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                            <url key="NSLink" string="http://en.wikipedia.org/wiki/Ceremonial_counties_of_England"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="415" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.21356823979591832" green="0.21133499004324791" blue="0.20650592896707531" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="415" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.21356823979591832" green="0.21133499004324791" blue="0.20650592896707531" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="415" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="http://en.wikipedia.org/wiki/List_of_counties_of_the_United_Kingdom#England">
+                                        <attributes>
+                                            <color key="NSColor" red="0.21356823979591832" green="0.21133499004324791" blue="0.20650592896707531" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                            <url key="NSLink" string="%22h"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="415" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+If you have any feedback on the game please email: feedback@counties-game.co.uk
+
+
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.21356823979591832" green="0.21133499004324791" blue="0.20650592896707531" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="TimesNewRomanPSMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="415" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
@@ -611,7 +709,7 @@ The county map used in the game is based on an image by Nilfanion [CC-BY-SA-3.0 
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.059839786280000001" green="0.092902272920000001" blue="0.40777853260000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.89285879846691829" green="0.921135703729137" blue="0.95575573979591832" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="31Y-Ux-myN" userLabel="First Responder" sceneMemberID="firstResponder"/>

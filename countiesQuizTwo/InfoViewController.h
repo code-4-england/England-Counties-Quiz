@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InfoViewController : UIViewController
+@interface InfoViewController : UIViewController <UIWebViewDelegate>
 - (IBAction)closeInfoView:(id)sender;
+
+//@property (strong, nonatomic) UIWebView *infoWebText;
 
 @end
