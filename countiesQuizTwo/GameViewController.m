@@ -153,7 +153,9 @@
     
     self.questionNumberText.text = [NSString stringWithFormat:@"%i", self.currentTurn];
     
-    NSNumber *randomCounty = [[NSNumber alloc] init];
+    //NSNumber *randomCounty = [[NSNumber alloc] init];
+    
+    NSNumber *randomCounty;
     
     randomCounty = [NSNumber numberWithInt:arc4random() % self.totalCounties];
         
@@ -209,7 +211,9 @@
     
     [self.scoreText setText:scoreString]; 
     
-    NSNumber *randomCounty = [[NSNumber alloc] init];
+    //NSNumber *randomCounty = [[NSNumber alloc] init];
+    
+    NSNumber *randomCounty;
     
     //NSLog(@"used countries%@", [usedCountiesArray description]);
     

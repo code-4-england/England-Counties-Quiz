@@ -125,35 +125,32 @@
         //resultTextField.hidden = YES;
         
         
-        
         if(gameController.totalQuestions == 10){
         
             if(gameController.score == gameController.totalQuestions){
            
                 self.resultMessageField.text = @"Perfect score! Congratulations!";
-        
                 
                 self.rewardImage.hidden = NO;
                 
-            }
+            } else{
            
-            if(10 > gameController.score >= 7){
+                if(gameController.score >= 7){
             
-                self.resultMessageField.text = @"Great score. Almost there.";
+                    self.resultMessageField.text = @"Great score!";
+                    
+                    self.rewardImage.hidden = YES;
+                }
             
-                self.rewardImage.hidden = YES;
-            }
-            
-            if(gameController.score < 7){
+                if(gameController.score < 7){
                 
-                self.resultMessageField.text = @"";
+                    self.resultMessageField.text = @"";
                 
-                self.rewardImage.hidden = YES;
+                    self.rewardImage.hidden = YES;
                 
+                }
             }
          
-            
-            
         }
         
         if(gameController.totalQuestions == 47){
@@ -164,23 +161,23 @@
                 
                 self.rewardImage.hidden = NO;
                 
-            }
+            }else{
             
+                if(gameController.score >= 30){
+                
+                    self.resultMessageField.text = @"Great score!";
+                
+                    self.rewardImage.hidden = YES;
+                
+                }
             
-            if(47 > gameController.score >= 32){
+                if(gameController.score < 30){
                 
-                self.resultMessageField.text = @"Great score. Almost there.";
+                    self.resultMessageField.text = @"";
                 
-                self.rewardImage.hidden = YES;
+                    self.rewardImage.hidden = YES;
                 
-            }
-            
-            if(gameController.score < 32){
-                
-                self.resultMessageField.text = @"";
-                
-                self.rewardImage.hidden = YES;
-                
+                }
             }
             
         }
